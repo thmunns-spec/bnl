@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>BNL FinImport</title>
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#121b2d;
+      --panel-2:#172236;
+      --soft:#1f2d46;
+      --line:#2d3d5c;
+      --text:#e5edf8;
+      --muted:#9db0cc;
+      --accent:#7dd3fc;
+      --green:#86efac;
+      --red:#fca5a5;
+      --yellow:#fde68a;
+      --blue:#93c5fd;
+      --shadow: 0 10px 30px rgba(0,0,0,.22);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#0a1020,#0c1426 35%,#0b1322);
+    }
+    .app{max-width:1500px;margin:0 auto;padding:16px 14px 32px}
+    .hero{
+      display:grid;grid-template-columns:1.3fr .9fr;gap:14px;margin-bottom:14px;
+    }
+    .card{
+      background:linear-gradient(180deg,rgba(23,34,54,.95),rgba(16,24,39,.95));
+      border:1px solid rgba(157,176,204,.12);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .hero-main{padding:18px 18px 16px}
+    .hero-side{padding:16px}
+    h1{margin:0 0 10px;font-size:28px;letter-spacing:.2px}
+    h2{margin:0 0 12px;font-size:18px}
+    h3{margin:0 0 10px;font-size:15px}
+    p{margin:0;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .spacer{flex:1}
+    .tabs{
+      display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px
+    }
+    .tab{
+      border:1px solid rgba(157,176,204,.14);
+      background:#10192a;color:var(--text);
+      border-radius:999px;padding:9px 14px;cursor:pointer;font-weight:600
+    }
+    .tab.active{background:linear-gradient(180deg,#1b2a44,#16233a);border-color:#35517b;color:#fff}
+    .toolbar{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:14px
+    }
+    .btn,button,.file-label{
+      border:none;border-radius:12px;padding:10px 14px;background:#18253c;color:#eef5ff;
+      cursor:pointer;font-weight:700;box-shadow:none;border:1px solid rgba(157,176,204,.12)
+    }
+    .btn.primary{background:linear-gradient(180deg,#1d6fa6,#165b89);border-color:#2778ac}
+    .btn.green{background:linear-gradient(180deg,#256d4a,#1c5b3d);border-color:#2f8f61}
+    .btn.red{background:linear-gradient(180deg,#7b2933,#63202a);border-color:#99404b}
+    .btn.ghost{background:#121a2c}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    input,select,textarea{
+      width:100%;background:#0f1828;border:1px solid rgba(157,176,204,.14);
+      color:var(--text);border-radius:12px;padding:10px 12px;outline:none
+    }
+    input::placeholder,textarea::placeholder{color:#7d90ab}
+    .grid{display:grid;gap:14px}
+    .grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .panel{padding:14px}
+    .kpi{
+      padding:14px;border-radius:16px;background:linear-gradient(180deg,#10182a,#0d1524);
+      border:1px solid rgba(157,176,204,.10)
+    }
+    .kpi .label{color:var(--muted);font-size:12px;margin-bottom:6px}
+    .kpi .value{font-size:26px;font-weight:800;letter-spacing:.2px}
+    .value.green{color:var(--green)}
+    .value.red{color:var(--red)}
+    .value.blue{color:var(--blue)}
+    .section{display:none}
+    .section.active{display:block}
+    .table-wrap{
+      overflow:auto;border-radius:16px;border:1px solid rgba(157,176,204,.10);background:#0d1524
+    }
+    table{width:100%;border-collapse:collapse;min-width:1150px}
+    thead th{
+      text-align:left;padding:12px 10px;font-size:12px;color:#c9d7ea;position:sticky;top:0;
+      background:#101a2d;border-bottom:1px solid rgba(157,176,204,.12);z-index:1
+    }
+    tbody td{
+      padding:10px;border-bottom:1px solid rgba(157,176,204,.08);vertical-align:top
+    }
+    tbody tr:hover{background:rgba(147,197,253,.04)}
+    .amount.pos{color:var(--green);font-weight:700}
+    .amount.neg{color:var(--red);font-weight:700}
+    .chip{
+      display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;
+      background:#122034;border:1px solid rgba(157,176,204,.12);font-size:12px
+    }
+    .subtle{background:#0d1525}
+    .list{
+      display:grid;gap:10px
+    }
+    .category-item, .rule-item{
+      border:1px solid rgba(157,176,204,.10);border-radius:16px;background:#10182b;padding:12px
+    }
+    .category-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .sub-list{display:grid;gap:8px;margin-top:10px;padding-left:10px}
+    .sub-item{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:#0d1424;border-radius:12px;padding:8px 10px;border:1px solid rgba(157,176,204,.08)}
+    .split{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:14px
+    }
+    .footer-note{margin-top:14px;color:var(--muted);font-size:12px}
+    .pillbar{display:flex;flex-wrap:wrap;gap:8px}
+    .stat-list{display:grid;gap:8px}
+    .stat-item{
+      display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center;
+      padding:10px 12px;border-radius:12px;background:#0d1524;border:1px solid rgba(157,176,204,.08)
+    }
+    .stat-item .amt{font-weight:800}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    .hidden{display:none !important}
+    .right{text-align:right}
+    .empty{
+      border:1px dashed rgba(157,176,204,.16);border-radius:18px;padding:28px;text-align:center;color:var(--muted)
+    }
+    a{color:#bfe7ff}
+    @media (max-width: 980px){
+      .hero,.split,.grid.cols-4,.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
+      .app{padding:12px 10px 28px}
+      h1{font-size:24px}
+      .kpi .value{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+  <div class="hero">
+    <div class="card hero-main">
+      <div class="row">
+        <div>
+          <h1>BNL FinImport</h1>
+          <p>Importa l’xlsx BNL, categorizza i movimenti come in FinImport, salva regole e riesporta tutto.</p>
+        </div>
+        <div class="spacer"></div>
+        <span class="chip">Solo browser</span>
+        <span class="chip">GitHub Pages</span>
+        <span class="chip">Archivio locale</span>
+      </div>
+
+      <div class="toolbar">
+        <label class="file-label btn primary">
+          Importa XLSX BNL
+          <input id="fileInput" type="file" accept=".xlsx,.xls" class="hidden">
+        </label>
+        <button class="btn ghost" id="loadSampleBtn">Carica demo</button>
+        <button class="btn green" id="exportXlsxBtn" disabled>Esporta XLSX arricchito</button>
+        <button class="btn ghost" id="saveArchiveBtn">Salva archivio JSON</button>
+        <label class="file-label btn ghost">
+          Carica archivio JSON
+          <input id="archiveInput" type="file" accept=".json" class="hidden">
+        </label>
+        <button class="btn red" id="resetAppBtn">Reset dati locali</button>
+      </div>
+
+      <div class="footer-note">
+        Nota: quando BNL non mostra il merchant reale, l’app usa <strong>Descrizione</strong> come base e ti lascia correggere tutto a mano. Le regole riapplicano automaticamente merchant e categorie ai movimenti futuri.
+      </div>
+    </div>
+
+    <div class="card hero-side">
+      <h2>Stato archivio</h2>
+      <div class="grid cols-2">
+        <div class="kpi">
+          <div class="label">Movimenti</div>
+          <div class="value blue" id="kpiCount">0</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Non categorizzati</div>
+          <div class="value" id="kpiUncat">0</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Uscite</div>
+          <div class="value red" id="kpiExpenses">€0</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Entrate</div>
+          <div class="value green" id="kpiIncome">€0</div>
+        </div>
+      </div>
+      <div class="footer-note" id="datasetLabel">Nessun file caricato.</div>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-section="movimenti">Movimenti</button>
+    <button class="tab" data-section="categorie">Categorie</button>
+    <button class="tab" data-section="regole">Regole</button>
+    <button class="tab" data-section="dashboard">Dashboard</button>
+    <button class="tab" data-section="impostazioni">Impostazioni</button>
+  </div>
+
+  <section class="section active" id="section-movimenti">
+    <div class="card panel">
+      <div class="grid cols-4">
+        <div>
+          <label class="small muted">Cerca</label>
+          <input id="searchInput" placeholder="merchant, descrizione, dettaglio..." />
+        </div>
+        <div>
+          <label class="small muted">Categoria</label>
+          <select id="filterCategory"></select>
+        </div>
+        <div>
+          <label class="small muted">Periodo</label>
+          <select id="filterMonth"></select>
+        </div>
+        <div>
+          <label class="small muted">Stato</label>
+          <select id="filterStatus">
+            <option value="all">Tutti</option>
+            <option value="uncategorized">Solo non categorizzati</option>
+            <option value="expense">Solo uscite</option>
+            <option value="income">Solo entrate</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:12px">
+        <button class="btn ghost" id="applyRulesBtn">Applica regole</button>
+        <button class="btn ghost" id="autoAssignBtn">Auto-assegna con suggerimenti base</button>
+        <button class="btn ghost" id="fillCategoryFromRulesBtn">Completa categorie mancanti</button>
+        <span class="chip" id="visibleCountChip">0 righe visibili</span>
+      </div>
+
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead>
+            <tr>
+              <th>Data contabile</th>
+              <th>Data valuta</th>
+              <th>Descrizione</th>
+              <th>Dettaglio</th>
+              <th>Importo</th>
+              <th>Merchant</th>
+              <th>Categoria</th>
+              <th>Sottocategoria</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody id="txBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-categorie">
+    <div class="split">
+      <div class="card panel">
+        <h2>Categorie</h2>
+        <div class="grid cols-2">
+          <div>
+            <label class="small muted">Nuova categoria</label>
+            <input id="newCategoryName" placeholder="es. Salute" />
+          </div>
+          <div style="display:flex;align-items:end">
+            <button class="btn primary" id="addCategoryBtn">Aggiungi categoria</button>
+          </div>
+        </div>
+        <div class="list" id="categoryList" style="margin-top:14px"></div>
+      </div>
+
+      <div class="card panel">
+        <h2>Mappatura merchant → categoria</h2>
+        <p class="muted">Qui vedi come i merchant finiscono nelle categorie. Puoi usare questo per capire se le tue regole stanno lavorando bene.</p>
+        <div id="merchantMapList" class="stat-list" style="margin-top:14px"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-regole">
+    <div class="split">
+      <div class="card panel">
+        <h2>Nuova regola</h2>
+        <div class="grid cols-2">
+          <div>
+            <label class="small muted">Se il testo contiene</label>
+            <input id="rulePattern" placeholder="es. farmacia abbatte" />
+          </div>
+          <div>
+            <label class="small muted">Campo da controllare</label>
+            <select id="ruleField">
+              <option value="all">Descrizione + Dettaglio + Merchant</option>
+              <option value="descrizione">Solo descrizione</option>
+              <option value="dettaglio">Solo dettaglio</option>
+              <option value="merchant">Solo merchant</option>
+            </select>
+          </div>
+          <div>
+            <label class="small muted">Merchant da assegnare</label>
+            <input id="ruleMerchant" placeholder="es. Farmacia Abbate" />
+          </div>
+          <div>
+            <label class="small muted">Categoria</label>
+            <select id="ruleCategory"></select>
+          </div>
+          <div>
+            <label class="small muted">Sottocategoria</label>
+            <select id="ruleSubcategory"></select>
+          </div>
+          <div style="display:flex;align-items:end">
+            <button class="btn primary" id="addRuleBtn">Salva regola</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card panel">
+        <h2>Regole salvate</h2>
+        <div id="ruleList" class="list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-dashboard">
+    <div class="grid cols-4">
+      <div class="card panel">
+        <div class="kpi subtle">
+          <div class="label">Saldo netto dataset</div>
+          <div class="value blue" id="dashNet">€0</div>
+        </div>
+      </div>
+      <div class="card panel">
+        <div class="kpi subtle">
+          <div class="label">Ticket medio uscite</div>
+          <div class="value" id="dashAvgExpense">€0</div>
+        </div>
+      </div>
+      <div class="card panel">
+        <div class="kpi subtle">
+          <div class="label">Merchant unici</div>
+          <div class="value" id="dashMerchants">0</div>
+        </div>
+      </div>
+      <div class="card panel">
+        <div class="kpi subtle">
+          <div class="label">Regole salvate</div>
+          <div class="value" id="dashRules">0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:14px">
+      <div class="card panel">
+        <h2>Spese per categoria</h2>
+        <div id="categoryStats" class="stat-list"></div>
+      </div>
+      <div class="card panel">
+        <h2>Top merchant in uscita</h2>
+        <div id="merchantStats" class="stat-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-impostazioni">
+    <div class="split">
+      <div class="card panel">
+        <h2>Archivio e compatibilità</h2>
+        <div class="list">
+          <div class="category-item">
+            <h3>Formato supportato</h3>
+            <p class="muted">XLSX BNL con intestazione simile a quella del file che hai caricato: tabella a partire dalla riga 9, colonne <strong>Data contabile</strong>, <strong>Data valuta</strong>, <strong>Descrizione</strong>, <strong>Dettaglio</strong>, <strong>Importo</strong>.</p>
+          </div>
+          <div class="category-item">
+            <h3>Persistenza locale</h3>
+            <p class="muted">Categorie, regole e ultimo dataset vengono salvati nel browser. Su iPad/Safari è meglio usare sempre la stessa URL GitHub Pages.</p>
+          </div>
+          <div class="category-item">
+            <h3>Esportazione</h3>
+            <p class="muted">Il file esportato aggiunge colonne <strong>Merchant</strong>, <strong>Categoria</strong>, <strong>Sottocategoria</strong>, <strong>Tipo movimento</strong>, <strong>Note</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card panel">
+        <h2>Azioni rapide</h2>
+        <div class="list">
+          <button class="btn ghost" id="seedCategoriesBtn">Carica categorie base</button>
+          <button class="btn ghost" id="seedRulesBtn">Carica regole base BNL</button>
+          <button class="btn ghost" id="recomputeBtn">Ricalcola dashboard</button>
+          <button class="btn red" id="clearDatasetBtn">Svuota solo dataset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+const STORAGE_KEY = 'bnl-finimport-v1';
+
+const state = {
+  datasetName: '',
+  transactions: [],
+  categories: [],
+  rules: [],
+};
+
+function uid(prefix='id'){
+  return prefix + '_' + Math.random().toString(36).slice(2,10);
+}
+function euro(n){
+  const v = Number(n || 0);
+  return v.toLocaleString('it-IT',{style:'currency',currency:'EUR'});
+}
+function normalizeText(s){
+  return String(s ?? '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase()
+    .replace(/\s+/g,' ')
+    .trim();
+}
+function safeText(v){ return String(v ?? '').trim(); }
+
+function getDefaultCategories(){
+  return [
+    {id:uid('cat'), name:'Entrate', subs:[{id:uid('sub'),name:'Stipendio / Pensione'},{id:uid('sub'),name:'Bonifici ricevuti'}]},
+    {id:uid('cat'), name:'Casa', subs:[{id:uid('sub'),name:'Utenze'},{id:uid('sub'),name:'Canone bancario'}]},
+    {id:uid('cat'), name:'Trasporti', subs:[{id:uid('sub'),name:'Carburante'},{id:uid('sub'),name:'Telepass'},{id:uid('sub'),name:'Prelievi ATM'}]},
+    {id:uid('cat'), name:'Salute', subs:[{id:uid('sub'),name:'Farmacia'},{id:uid('sub'),name:'Analisi'},{id:uid('sub'),name:'Fisioterapia'}]},
+    {id:uid('cat'), name:'Telefonia e digitale', subs:[{id:uid('sub'),name:'Telefonia'},{id:uid('sub'),name:'Pagamenti digitali'}]},
+    {id:uid('cat'), name:'Debiti e finanziamenti', subs:[{id:uid('sub'),name:'Rate / Cofidis'}]},
+    {id:uid('cat'), name:'Pagamenti carta', subs:[{id:uid('sub'),name:'Saldo carta di credito'},{id:uid('sub'),name:'Carta di debito'}]},
+    {id:uid('cat'), name:'Altro', subs:[{id:uid('sub'),name:'Da classificare'}]},
+  ];
+}
+function getDefaultRules(){
+  return [
+    {id:uid('rule'), pattern:'farmacia abbatte', field:'descrizione', merchant:'Farmacia Abbate', categoryName:'Salute', subcategoryName:'Farmacia'},
+    {id:uid('rule'), pattern:'fisioterapia clodio', field:'descrizione', merchant:'Fisioterapia Clodio', categoryName:'Salute', subcategoryName:'Fisioterapia'},
+    {id:uid('rule'), pattern:'artemisa lab analysis', field:'descrizione', merchant:'Artemisa Lab Analysis', categoryName:'Salute', subcategoryName:'Analisi'},
+    {id:uid('rule'), pattern:'t.i.m.', field:'dettaglio', merchant:'TIM', categoryName:'Telefonia e digitale', subcategoryName:'Telefonia'},
+    {id:uid('rule'), pattern:'paypal', field:'dettaglio', merchant:'PayPal', categoryName:'Telefonia e digitale', subcategoryName:'Pagamenti digitali'},
+    {id:uid('rule'), pattern:'teamsystem', field:'dettaglio', merchant:'TeamSystem Payments', categoryName:'Altro', subcategoryName:'Da classificare'},
+    {id:uid('rule'), pattern:'telepass', field:'dettaglio', merchant:'Telepass', categoryName:'Trasporti', subcategoryName:'Telepass'},
+    {id:uid('rule'), pattern:'canone conto bnl', field:'dettaglio', merchant:'Canone conto BNL', categoryName:'Casa', subcategoryName:'Canone bancario'},
+    {id:uid('rule'), pattern:'inps', field:'dettaglio', merchant:'INPS', categoryName:'Entrate', subcategoryName:'Stipendio / Pensione'},
+    {id:uid('rule'), pattern:'vicariato di roma', field:'dettaglio', merchant:'Vicariato di Roma', categoryName:'Entrate', subcategoryName:'Bonifici ricevuti'},
+    {id:uid('rule'), pattern:'cofidis', field:'dettaglio', merchant:'Cofidis', categoryName:'Debiti e finanziamenti', subcategoryName:'Rate / Cofidis'},
+    {id:uid('rule'), pattern:'prelievo atm', field:'descrizione', merchant:'ATM / Prelievo BNL', categoryName:'Trasporti', subcategoryName:'Prelievi ATM'},
+    {id:uid('rule'), pattern:'estratto conto carta di credito', field:'dettaglio', merchant:'Carta di credito (saldo)', categoryName:'Pagamenti carta', subcategoryName:'Saldo carta di credito'},
+    {id:uid('rule'), pattern:'pagamento con carta di debito', field:'dettaglio', merchant:'Carta di debito', categoryName:'Pagamenti carta', subcategoryName:'Carta di debito'},
+    {id:uid('rule'), pattern:'addebito utenze', field:'dettaglio', merchant:'Utenze', categoryName:'Casa', subcategoryName:'Utenze'},
+  ];
+}
+
+function saveState(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const parsed = JSON.parse(raw);
+      state.datasetName = parsed.datasetName || '';
+      state.transactions = Array.isArray(parsed.transactions) ? parsed.transactions : [];
+      state.categories = Array.isArray(parsed.categories) && parsed.categories.length ? parsed.categories : getDefaultCategories();
+      state.rules = Array.isArray(parsed.rules) ? parsed.rules : getDefaultRules();
+      return;
+    }
+  }catch(e){ console.warn(e); }
+  state.categories = getDefaultCategories();
+  state.rules = getDefaultRules();
+}
+
+function catById(id){ return state.categories.find(c=>c.id===id); }
+function subById(catId, subId){
+  const cat = catById(catId);
+  return cat?.subs?.find(s=>s.id===subId);
+}
+function findCategoryByName(name){
+  return state.categories.find(c=>normalizeText(c.name)===normalizeText(name));
+}
+function findSubByName(cat, name){
+  return cat?.subs?.find(s=>normalizeText(s.name)===normalizeText(name));
+}
+
+function buildCategorySelectOptions(select, includeEmpty=true, onlyCatId=null){
+  const current = select.value;
+  let html = includeEmpty ? `<option value="">—</option>` : '';
+  const cats = onlyCatId ? state.categories.filter(c=>c.id===onlyCatId) : state.categories;
+  for(const cat of cats){
+    html += `<option value="${cat.id}">${escapeHtml(cat.name)}</option>`;
+  }
+  select.innerHTML = html;
+  if([...select.options].some(o=>o.value===current)) select.value = current;
+}
+function buildSubcategorySelectOptions(select, categoryId, includeEmpty=true){
+  const current = select.value;
+  let html = includeEmpty ? `<option value="">—</option>` : '';
+  const cat = catById(categoryId);
+  for(const sub of (cat?.subs || [])){
+    html += `<option value="${sub.id}">${escapeHtml(sub.name)}</option>`;
+  }
+  select.innerHTML = html;
+  if([...select.options].some(o=>o.value===current)) select.value = current;
+}
+
+function guessMerchant(tx){
+  const descr = safeText(tx.descrizione);
+  const det = safeText(tx.dettaglio);
+  const nd = normalizeText(descr);
+  const nt = normalizeText(det);
+
+  if(nd.includes('prelievo atm')) return 'ATM / Prelievo BNL';
+  if(nt.includes('paypal')) return 'PayPal';
+  if(nt.includes('teamsystem')) return 'TeamSystem Payments';
+  if(nt.includes('telepass')) return 'Telepass';
+  if(nt.includes('t.i.m') || nt.includes(' tim')) return 'TIM';
+  if(nt.includes('cofidis')) return 'Cofidis';
+  if(nt.includes('estratto conto carta di credito')) return 'Carta di credito (saldo)';
+  if(nt.includes('pagamento con carta di debito')) return descr || 'Carta di debito';
+  if(nt.includes('addebito utenze')) return 'Utenze';
+  if(nt.includes('canone conto bnl')) return 'Canone conto BNL';
+  if(nd.includes('stipendi e pensioni')) return det || descr || 'Entrata';
+  return descr || det || 'Sconosciuto';
+}
+
+function applyRulesToTransaction(tx, options={onlyMissingCategory:false}){
+  for(const rule of state.rules){
+    const pattern = normalizeText(rule.pattern);
+    if(!pattern) continue;
+    const hay = {
+      descrizione: normalizeText(tx.descrizione),
+      dettaglio: normalizeText(tx.dettaglio),
+      merchant: normalizeText(tx.merchant),
+      all: normalizeText(`${tx.descrizione} ${tx.dettaglio} ${tx.merchant}`)
+    }[rule.field || 'all'];
+
+    if(hay.includes(pattern)){
+      if(rule.merchant) tx.merchant = rule.merchant;
+      if(!options.onlyMissingCategory || !tx.categoryId){
+        const cat = findCategoryByName(rule.categoryName);
+        if(cat){
+          tx.categoryId = cat.id;
+          const sub = findSubByName(cat, rule.subcategoryName);
+          tx.subcategoryId = sub?.id || '';
+        }
+      }
+    }
+  }
+}
+
+function parseBNLWorkbook(fileName, arrayBuffer){
+  const wb = XLSX.read(arrayBuffer, {type:'array'});
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, {header:1, raw:false, defval:''});
+
+  let headerRowIndex = rows.findIndex(r => normalizeText(r.join(' | ')).includes('data contabile') && normalizeText(r.join(' | ')).includes('importo'));
+  if(headerRowIndex === -1) throw new Error('Intestazione BNL non trovata.');
+  const headers = rows[headerRowIndex].map(v => safeText(v));
+  const idx = {
+    dataContabile: headers.findIndex(h => normalizeText(h)==='data contabile'),
+    dataValuta: headers.findIndex(h => normalizeText(h)==='data valuta'),
+    descrizione: headers.findIndex(h => normalizeText(h)==='descrizione'),
+    dettaglio: headers.findIndex(h => normalizeText(h)==='dettaglio'),
+    importo: headers.findIndex(h => normalizeText(h)==='importo'),
+  };
+  const required = Object.values(idx).every(v => v >= 0);
+  if(!required) throw new Error('Colonne richieste non trovate nel file BNL.');
+
+  const txs = [];
+  for(let r = headerRowIndex + 1; r < rows.length; r++){
+    const row = rows[r];
+    const descrizione = safeText(row[idx.descrizione]);
+    const dettaglio = safeText(row[idx.dettaglio]);
+    const importoRaw = row[idx.importo];
+    const hasAny = [descrizione, dettaglio, importoRaw, row[idx.dataContabile], row[idx.dataValuta]].some(v => safeText(v) !== '');
+    if(!hasAny) continue;
+
+    const importo = Number(String(importoRaw).replace(/\./g,'').replace(',','.'));
+    const tx = {
+      id: uid('tx'),
+      dataContabile: safeText(row[idx.dataContabile]),
+      dataValuta: safeText(row[idx.dataValuta]),
+      descrizione,
+      dettaglio,
+      importo: isNaN(importo) ? 0 : importo,
+      merchant: '',
+      categoryId: '',
+      subcategoryId: '',
+      note: '',
+      sourceRow: r + 1
+    };
+    tx.merchant = guessMerchant(tx);
+    applyRulesToTransaction(tx);
+    txs.push(tx);
+  }
+  state.datasetName = fileName;
+  state.transactions = txs;
+  saveState();
+  renderAll();
+}
+
+function exportEnrichedXlsx(){
+  const rows = state.transactions.map(tx => ({
+    'Data contabile': tx.dataContabile,
+    'Data valuta': tx.dataValuta,
+    'Descrizione': tx.descrizione,
+    'Dettaglio': tx.dettaglio,
+    'Importo': tx.importo,
+    'Merchant': tx.merchant,
+    'Categoria': catById(tx.categoryId)?.name || '',
+    'Sottocategoria': subById(tx.categoryId, tx.subcategoryId)?.name || '',
+    'Tipo movimento': tx.importo >= 0 ? 'Entrata' : 'Uscita',
+    'Note': tx.note || ''
+  }));
+  const ws = XLSX.utils.json_to_sheet(rows);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Movimenti categorizzati');
+  XLSX.writeFile(wb, (state.datasetName || 'movimenti') .replace(/\.xlsx?$/i,'') + '_categorizzato.xlsx');
+}
+
+function exportArchive(){
+  const payload = {
+    datasetName: state.datasetName,
+    transactions: state.transactions,
+    categories: state.categories,
+    rules: state.rules,
+    exportedAt: new Date().toISOString(),
+    app: 'BNL FinImport'
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'bnl-finimport-archivio.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function importArchive(file){
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const parsed = JSON.parse(e.target.result);
+      state.datasetName = parsed.datasetName || '';
+      state.transactions = parsed.transactions || [];
+      state.categories = parsed.categories?.length ? parsed.categories : getDefaultCategories();
+      state.rules = parsed.rules || getDefaultRules();
+      saveState();
+      renderAll();
+    }catch(err){
+      alert('Archivio JSON non valido.');
+    }
+  };
+  reader.readAsText(file);
+}
+
+function renderAll(){
+  renderKpis();
+  renderFilters();
+  renderTransactions();
+  renderCategories();
+  renderRules();
+  renderDashboard();
+  renderSettingsBits();
+  saveState();
+}
+
+function renderKpis(){
+  const txs = state.transactions;
+  const income = txs.filter(t=>t.importo>0).reduce((a,b)=>a+b.importo,0);
+  const expenses = txs.filter(t=>t.importo<0).reduce((a,b)=>a+Math.abs(b.importo),0);
+  const uncat = txs.filter(t=>!t.categoryId).length;
+  document.getElementById('kpiCount').textContent = txs.length.toLocaleString('it-IT');
+  document.getElementById('kpiUncat').textContent = uncat.toLocaleString('it-IT');
+  document.getElementById('kpiExpenses').textContent = euro(expenses);
+  document.getElementById('kpiIncome').textContent = euro(income);
+  document.getElementById('datasetLabel').textContent = state.datasetName ? `Dataset: ${state.datasetName}` : 'Nessun file caricato.';
+  document.getElementById('exportXlsxBtn').disabled = !txs.length;
+}
+
+function renderFilters(){
+  const catSelect = document.getElementById('filterCategory');
+  const monthSelect = document.getElementById('filterMonth');
+  const currentCat = catSelect.value;
+  const currentMonth = monthSelect.value;
+  catSelect.innerHTML = `<option value="">Tutte</option>` + state.categories.map(c=>`<option value="${c.id}">${escapeHtml(c.name)}</option>`).join('');
+  if([...catSelect.options].some(o=>o.value===currentCat)) catSelect.value = currentCat;
+
+  const months = [...new Set(state.transactions.map(t=> monthKey(t.dataContabile)).filter(Boolean))].sort().reverse();
+  monthSelect.innerHTML = `<option value="">Tutti</option>` + months.map(m=>`<option value="${m}">${formatMonthKey(m)}</option>`).join('');
+  if([...monthSelect.options].some(o=>o.value===currentMonth)) monthSelect.value = currentMonth;
+
+  buildCategorySelectOptions(document.getElementById('ruleCategory'));
+  syncRuleSubcats();
+}
+
+function filteredTransactions(){
+  const q = normalizeText(document.getElementById('searchInput').value);
+  const catId = document.getElementById('filterCategory').value;
+  const month = document.getElementById('filterMonth').value;
+  const status = document.getElementById('filterStatus').value;
+  return state.transactions.filter(tx=>{
+    const hay = normalizeText(`${tx.merchant} ${tx.descrizione} ${tx.dettaglio} ${tx.note}`);
+    if(q && !hay.includes(q)) return false;
+    if(catId && tx.categoryId !== catId) return false;
+    if(month && monthKey(tx.dataContabile) !== month) return false;
+    if(status==='uncategorized' && tx.categoryId) return false;
+    if(status==='expense' && !(tx.importo<0)) return false;
+    if(status==='income' && !(tx.importo>0)) return false;
+    return true;
+  });
+}
+
+function renderTransactions(){
+  const txs = filteredTransactions();
+  const body = document.getElementById('txBody');
+  document.getElementById('visibleCountChip').textContent = `${txs.length} righe visibili`;
+  if(!txs.length){
+    body.innerHTML = `<tr><td colspan="9"><div class="empty">Nessun movimento da mostrare.</div></td></tr>`;
+    return;
+  }
+  body.innerHTML = txs.map(tx=>{
+    const cat = catById(tx.categoryId);
+    const subs = cat?.subs || [];
+    return `
+      <tr>
+        <td>${escapeHtml(tx.dataContabile)}</td>
+        <td>${escapeHtml(tx.dataValuta)}</td>
+        <td>${escapeHtml(tx.descrizione)}</td>
+        <td>${escapeHtml(tx.dettaglio)}</td>
+        <td class="right amount ${tx.importo >= 0 ? 'pos':'neg'}">${escapeHtml(euro(tx.importo))}</td>
+        <td><input data-id="${tx.id}" data-field="merchant" value="${escapeAttr(tx.merchant)}" placeholder="Merchant"></td>
+        <td>
+          <select data-id="${tx.id}" data-field="categoryId" class="tx-cat-select">
+            <option value="">—</option>
+            ${state.categories.map(c=>`<option value="${c.id}" ${tx.categoryId===c.id?'selected':''}>${escapeHtml(c.name)}</option>`).join('')}
+          </select>
+        </td>
+        <td>
+          <select data-id="${tx.id}" data-field="subcategoryId" class="tx-sub-select" data-cat="${tx.categoryId || ''}">
+            <option value="">—</option>
+            ${subs.map(s=>`<option value="${s.id}" ${tx.subcategoryId===s.id?'selected':''}>${escapeHtml(s.name)}</option>`).join('')}
+          </select>
+        </td>
+        <td><input data-id="${tx.id}" data-field="note" value="${escapeAttr(tx.note || '')}" placeholder="Note"></td>
+      </tr>
+    `;
+  }).join('');
+}
+
+function renderCategories(){
+  const list = document.getElementById('categoryList');
+  if(!state.categories.length){
+    list.innerHTML = `<div class="empty">Nessuna categoria.</div>`;
+  } else {
+    list.innerHTML = state.categories.map(cat=>`
+      <div class="category-item">
+        <div class="category-head">
+          <input value="${escapeAttr(cat.name)}" data-cat-id="${cat.id}" class="cat-name-input" />
+          <button class="btn ghost small-btn" data-action="add-sub" data-cat-id="${cat.id}">Aggiungi sottocategoria</button>
+          <button class="btn red small-btn" data-action="delete-cat" data-cat-id="${cat.id}">Elimina</button>
+        </div>
+        <div class="sub-list">
+          ${(cat.subs || []).map(sub=>`
+            <div class="sub-item">
+              <input value="${escapeAttr(sub.name)}" data-cat-id="${cat.id}" data-sub-id="${sub.id}" class="sub-name-input" />
+              <button class="btn red" data-action="delete-sub" data-cat-id="${cat.id}" data-sub-id="${sub.id}">Elimina</button>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  const pairs = aggregateMerchantMappings();
+  const map = document.getElementById('merchantMapList');
+  map.innerHTML = pairs.length ? pairs.map(p=>`
+    <div class="stat-item">
+      <div>
+        <div><strong>${escapeHtml(p.merchant)}</strong></div>
+        <div class="small muted">${escapeHtml(p.category)}${p.subcategory ? ' → ' + escapeHtml(p.subcategory) : ''}</div>
+      </div>
+      <div class="amt">${euro(p.amount)}</div>
+      <div class="small muted">${p.count} mov.</div>
+    </div>
+  `).join('') : `<div class="empty">Ancora nessuna mappatura utile.</div>`;
+}
+
+function renderRules(){
+  const list = document.getElementById('ruleList');
+  list.innerHTML = state.rules.length ? state.rules.map(rule=>`
+    <div class="rule-item">
+      <div class="row">
+        <span class="chip mono">contiene: ${escapeHtml(rule.pattern)}</span>
+        <span class="chip">${escapeHtml(rule.field)}</span>
+        ${rule.merchant ? `<span class="chip">merchant: ${escapeHtml(rule.merchant)}</span>` : ''}
+        ${rule.categoryName ? `<span class="chip">${escapeHtml(rule.categoryName)}${rule.subcategoryName ? ' → ' + escapeHtml(rule.subcategoryName) : ''}</span>` : ''}
+        <div class="spacer"></div>
+        <button class="btn red" data-rule-delete="${rule.id}">Elimina</button>
+      </div>
+    </div>
+  `).join('') : `<div class="empty">Nessuna regola salvata.</div>`;
+}
+
+function renderDashboard(){
+  const txs = state.transactions;
+  const income = txs.filter(t=>t.importo>0).reduce((a,b)=>a+b.importo,0);
+  const expensesTx = txs.filter(t=>t.importo<0);
+  const expenses = expensesTx.reduce((a,b)=>a+Math.abs(b.importo),0);
+  const net = income - expenses;
+  const avgExpense = expensesTx.length ? expenses / expensesTx.length : 0;
+  const uniqueMerchants = new Set(txs.map(t=>normalizeText(t.merchant)).filter(Boolean)).size;
+
+  document.getElementById('dashNet').textContent = euro(net);
+  document.getElementById('dashAvgExpense').textContent = euro(avgExpense);
+  document.getElementById('dashMerchants').textContent = uniqueMerchants.toLocaleString('it-IT');
+  document.getElementById('dashRules').textContent = state.rules.length.toLocaleString('it-IT');
+
+  const byCategory = {};
+  for(const tx of expensesTx){
+    const cat = catById(tx.categoryId)?.name || 'Non categorizzato';
+    byCategory[cat] = (byCategory[cat] || 0) + Math.abs(tx.importo);
+  }
+  const catStats = Object.entries(byCategory).sort((a,b)=>b[1]-a[1]).slice(0,20);
+  document.getElementById('categoryStats').innerHTML = catStats.length ? catStats.map(([name, amt])=>`
+    <div class="stat-item">
+      <div><strong>${escapeHtml(name)}</strong></div>
+      <div class="amt">${euro(amt)}</div>
+      <div class="small muted">${((amt/expenses)*100 || 0).toFixed(1)}%</div>
+    </div>
+  `).join('') : `<div class="empty">Carica un dataset per vedere le statistiche.</div>`;
+
+  const byMerchant = {};
+  for(const tx of expensesTx){
+    const name = tx.merchant || 'Sconosciuto';
+    byMerchant[name] = (byMerchant[name] || 0) + Math.abs(tx.importo);
+  }
+  const merchStats = Object.entries(byMerchant).sort((a,b)=>b[1]-a[1]).slice(0,20);
+  document.getElementById('merchantStats').innerHTML = merchStats.length ? merchStats.map(([name, amt])=>`
+    <div class="stat-item">
+      <div><strong>${escapeHtml(name)}</strong></div>
+      <div class="amt">${euro(amt)}</div>
+      <div class="small muted">${((amt/expenses)*100 || 0).toFixed(1)}%</div>
+    </div>
+  `).join('') : `<div class="empty">Carica un dataset per vedere le statistiche.</div>`;
+}
+
+function renderSettingsBits(){
+  buildCategorySelectOptions(document.getElementById('ruleCategory'));
+  syncRuleSubcats();
+}
+
+function aggregateMerchantMappings(){
+  const map = new Map();
+  for(const tx of state.transactions.filter(t=>t.merchant && t.categoryId)){
+    const key = `${tx.merchant}||${tx.categoryId}||${tx.subcategoryId||''}`;
+    if(!map.has(key)){
+      map.set(key, {
+        merchant: tx.merchant,
+        category: catById(tx.categoryId)?.name || '',
+        subcategory: subById(tx.categoryId, tx.subcategoryId)?.name || '',
+        amount: 0,
+        count: 0
+      });
+    }
+    const entry = map.get(key);
+    entry.amount += Math.abs(tx.importo < 0 ? tx.importo : 0);
+    entry.count += 1;
+  }
+  return [...map.values()].sort((a,b)=>b.amount-a.amount);
+}
+
+function syncRuleSubcats(){
+  const catId = document.getElementById('ruleCategory').value;
+  buildSubcategorySelectOptions(document.getElementById('ruleSubcategory'), catId);
+}
+
+function monthKey(dateStr){
+  const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(safeText(dateStr));
+  if(!m) return '';
+  return `${m[3]}-${String(m[2]).padStart(2,'0')}`;
+}
+function formatMonthKey(k){
+  const [y,m] = k.split('-');
+  const names = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+  return `${names[Number(m)-1] || m} ${y}`;
+}
+
+function seedCategories(){
+  const base = getDefaultCategories();
+  for(const cat of base){
+    const existing = findCategoryByName(cat.name);
+    if(existing){
+      for(const sub of cat.subs){
+        if(!findSubByName(existing, sub.name)) existing.subs.push(sub);
+      }
+    } else {
+      state.categories.push(cat);
+    }
+  }
+  renderAll();
+}
+function seedRules(){
+  const base = getDefaultRules();
+  for(const rule of base){
+    if(!state.rules.some(r => normalizeText(r.pattern)===normalizeText(rule.pattern) && r.field===rule.field)){
+      state.rules.push(rule);
+    }
+  }
+  renderAll();
+}
+
+function attachEvents(){
+  document.getElementById('tabs').addEventListener('click', e=>{
+    const btn = e.target.closest('.tab');
+    if(!btn) return;
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    document.getElementById('section-' + btn.dataset.section).classList.add('active');
+  });
+
+  document.getElementById('fileInput').addEventListener('change', async e=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    try{
+      parseBNLWorkbook(file.name, await file.arrayBuffer());
+    }catch(err){
+      alert('Errore importazione file: ' + err.message);
+    }
+    e.target.value = '';
+  });
+
+  document.getElementById('archiveInput').addEventListener('change', e=>{
+    const file = e.target.files[0];
+    if(file) importArchive(file);
+    e.target.value = '';
+  });
+
+  document.getElementById('loadSampleBtn').addEventListener('click', ()=>{
+    const sample = [
+      {dataContabile:'27/2/2026',dataValuta:'27/2/2026',descrizione:'Prelievo Atm',dettaglio:'Bnl Ag. Roma 27 Asia',importo:-100},
+      {dataContabile:'20/2/2026',dataValuta:'16/2/2026',descrizione:'Farmacia Abbate',dettaglio:'Pagamento Con Carta Di Debito',importo:-12.9},
+      {dataContabile:'11/2/2026',dataValuta:'11/2/2026',descrizione:'Addebito Diretto',dettaglio:'Teamsystem Payments S.r.',importo:-119.8},
+      {dataContabile:'10/2/2026',dataValuta:'8/2/2026',descrizione:'Ricarica Telefonica',dettaglio:'T.i.m.',importo:-15},
+      {dataContabile:'2/2/2026',dataValuta:'2/2/2026',descrizione:'Stipendi E Pensioni',dettaglio:'Inps',importo:3053.46}
+    ].map(x=>({
+      ...x,id:uid('tx'),merchant:'',categoryId:'',subcategoryId:'',note:'',sourceRow:'demo'
+    }));
+    for(const tx of sample){ tx.merchant = guessMerchant(tx); applyRulesToTransaction(tx); }
+    state.datasetName = 'demo-bnl.xlsx';
+    state.transactions = sample;
+    renderAll();
+  });
+
+  document.getElementById('exportXlsxBtn').addEventListener('click', exportEnrichedXlsx);
+  document.getElementById('saveArchiveBtn').addEventListener('click', exportArchive);
+
+  document.getElementById('resetAppBtn').addEventListener('click', ()=>{
+    if(!confirm('Cancello dataset, categorie e regole locali?')) return;
+    localStorage.removeItem(STORAGE_KEY);
+    state.datasetName = '';
+    state.transactions = [];
+    state.categories = getDefaultCategories();
+    state.rules = getDefaultRules();
+    renderAll();
+  });
+
+  document.getElementById('clearDatasetBtn').addEventListener('click', ()=>{
+    if(!confirm('Svuoto solo il dataset corrente?')) return;
+    state.datasetName = '';
+    state.transactions = [];
+    renderAll();
+  });
+
+  ['searchInput','filterCategory','filterMonth','filterStatus'].forEach(id=>{
+    document.getElementById(id).addEventListener('input', renderTransactions);
+    document.getElementById(id).addEventListener('change', renderTransactions);
+  });
+
+  document.getElementById('applyRulesBtn').addEventListener('click', ()=>{
+    state.transactions.forEach(tx=>applyRulesToTransaction(tx));
+    renderAll();
+  });
+  document.getElementById('fillCategoryFromRulesBtn').addEventListener('click', ()=>{
+    state.transactions.forEach(tx=>applyRulesToTransaction(tx,{onlyMissingCategory:true}));
+    renderAll();
+  });
+  document.getElementById('autoAssignBtn').addEventListener('click', ()=>{
+    state.transactions.forEach(tx=>{
+      if(!tx.merchant) tx.merchant = guessMerchant(tx);
+      applyRulesToTransaction(tx,{onlyMissingCategory:true});
+    });
+    renderAll();
+  });
+
+  document.getElementById('txBody').addEventListener('input', e=>{
+    const id = e.target.dataset.id;
+    const field = e.target.dataset.field;
+    if(!id || !field) return;
+    const tx = state.transactions.find(t=>t.id===id);
+    if(!tx) return;
+    tx[field] = e.target.value;
+    saveState();
+  });
+
+  document.getElementById('txBody').addEventListener('change', e=>{
+    const id = e.target.dataset.id;
+    const field = e.target.dataset.field;
+    if(!id || !field) return;
+    const tx = state.transactions.find(t=>t.id===id);
+    if(!tx) return;
+    tx[field] = e.target.value;
+    if(field === 'categoryId'){
+      tx.subcategoryId = '';
+      renderTransactions();
+    }
+    renderAll();
+  });
+
+  document.getElementById('addCategoryBtn').addEventListener('click', ()=>{
+    const input = document.getElementById('newCategoryName');
+    const name = safeText(input.value);
+    if(!name) return;
+    if(findCategoryByName(name)){ alert('Categoria già esistente.'); return; }
+    state.categories.push({id:uid('cat'), name, subs:[]});
+    input.value = '';
+    renderAll();
+  });
+
+  document.getElementById('categoryList').addEventListener('input', e=>{
+    if(e.target.classList.contains('cat-name-input')){
+      const cat = catById(e.target.dataset.catId);
+      if(cat) cat.name = e.target.value;
+      saveState();
+    }
+    if(e.target.classList.contains('sub-name-input')){
+      const sub = subById(e.target.dataset.catId, e.target.dataset.subId);
+      if(sub) sub.name = e.target.value;
+      saveState();
+    }
+  });
+
+  document.getElementById('categoryList').addEventListener('click', e=>{
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    const action = btn.dataset.action;
+    const catId = btn.dataset.catId;
+    const subId = btn.dataset.subId;
+    const cat = catById(catId);
+    if(action === 'add-sub'){
+      const name = prompt('Nome sottocategoria:');
+      if(!name || !cat) return;
+      cat.subs.push({id:uid('sub'), name});
+      renderAll();
+    }
+    if(action === 'delete-cat'){
+      if(!confirm('Eliminare categoria? I movimenti perderanno il collegamento.')) return;
+      state.transactions.forEach(tx=>{ if(tx.categoryId===catId){ tx.categoryId=''; tx.subcategoryId=''; }});
+      state.categories = state.categories.filter(c=>c.id!==catId);
+      renderAll();
+    }
+    if(action === 'delete-sub'){
+      if(!confirm('Eliminare sottocategoria?')) return;
+      if(cat){
+        cat.subs = cat.subs.filter(s=>s.id!==subId);
+        state.transactions.forEach(tx=>{ if(tx.categoryId===catId && tx.subcategoryId===subId){ tx.subcategoryId=''; }});
+      }
+      renderAll();
+    }
+  });
+
+  document.getElementById('ruleCategory').addEventListener('change', syncRuleSubcats);
+  document.getElementById('addRuleBtn').addEventListener('click', ()=>{
+    const pattern = safeText(document.getElementById('rulePattern').value);
+    if(!pattern){ alert('Scrivi il testo da intercettare.'); return; }
+    const field = document.getElementById('ruleField').value;
+    const merchant = safeText(document.getElementById('ruleMerchant').value);
+    const catId = document.getElementById('ruleCategory').value;
+    const subId = document.getElementById('ruleSubcategory').value;
+    const cat = catById(catId);
+    const sub = subById(catId, subId);
+    state.rules.push({
+      id: uid('rule'),
+      pattern,
+      field,
+      merchant,
+      categoryName: cat?.name || '',
+      subcategoryName: sub?.name || '',
+    });
+    document.getElementById('rulePattern').value = '';
+    document.getElementById('ruleMerchant').value = '';
+    document.getElementById('ruleCategory').value = '';
+    syncRuleSubcats();
+    renderAll();
+  });
+
+  document.getElementById('ruleList').addEventListener('click', e=>{
+    const btn = e.target.closest('button[data-rule-delete]');
+    if(!btn) return;
+    state.rules = state.rules.filter(r=>r.id!==btn.dataset.ruleDelete);
+    renderAll();
+  });
+
+  document.getElementById('seedCategoriesBtn').addEventListener('click', seedCategories);
+  document.getElementById('seedRulesBtn').addEventListener('click', seedRules);
+  document.getElementById('recomputeBtn').addEventListener('click', renderAll);
+}
+
+function escapeHtml(str=''){
+  return String(str).replace(/[&<>"']/g, s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+}
+function escapeAttr(str=''){ return escapeHtml(str); }
+
+loadState();
+document.addEventListener('DOMContentLoaded', ()=>{
+  attachEvents();
+  renderAll();
+});
+</script>
+</body>
+</html>
