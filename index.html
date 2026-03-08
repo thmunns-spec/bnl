@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNL FinImport</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<h1>BNL Spese – Categorizzatore</h1>
+
+<div class="controls">
+<input type="file" id="fileInput" accept=".xlsx,.csv">
+<input type="text" id="newCategory" placeholder="Nuova categoria">
+<button onclick="addCategory()">Aggiungi categoria</button>
+<select id="filterCategory" onchange="renderTable()">
+<option value="">Tutte le categorie</option>
+</select>
+<button onclick="exportCSV()">Esporta CSV</button>
+</div>
+
+<table id="table">
+<thead>
+<tr>
+<th>Data</th>
+<th>Importo</th>
+<th>Descrizione</th>
+<th>Tipo</th>
+<th>Categoria</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
