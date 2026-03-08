@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BNL FinImport</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>BNL FinImport</h1>
+      <p class="subtitle">Categorizzazione manuale spese — pronta per GitHub Pages</p>
+    </div>
+    <div class="status-wrap">
+      <div id="status" class="status">Caricamento dati…</div>
+    </div>
+  </header>
+
+  <section class="panel controls">
+    <div class="row">
+      <label class="file-btn">
+        <input type="file" id="fileInput" accept=".xlsx,.csv" hidden />
+        <span>Importa XLSX / CSV</span>
+      </label>
+      <button id="reloadPreloadedBtn" class="secondary">Ricarica dati inclusi</button>
+      <button id="exportBtn">Esporta CSV</button>
+    </div>
+
+    <div class="row">
+      <input id="searchInput" type="text" placeholder="Cerca descrizione o tipo..." />
+      <select id="kindFilter">
+        <option value="">Tutti</option>
+        <option value="uscite">Solo uscite</option>
+        <option value="entrate">Solo entrate</option>
+      </select>
+      <select id="categoryFilter">
+        <option value="">Tutte le categorie</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <input id="newCategoryInput" type="text" placeholder="Nuova categoria" />
+      <button id="addCategoryBtn">Aggiungi categoria</button>
+      <select id="bulkCategorySelect">
+        <option value="">Categoria massiva</option>
+      </select>
+      <button id="applyVisibleBtn" class="secondary">Applica ai visibili</button>
+    </div>
+
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="panel table-panel">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Importo</th>
+          <th>Descrizione</th>
+          <th>Tipo</th>
+          <th>Categoria</th>
+        </tr>
+      </thead>
+      <tbody id="txBody"></tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

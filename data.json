@@ -1,0 +1,2963 @@
+[
+  {
+    "date": "27/2/2026",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "5a9a5c321d8d5649"
+  },
+  {
+    "date": "20/2/2026",
+    "amount": -150.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "52f27d802a464450"
+  },
+  {
+    "date": "16/2/2026",
+    "amount": -12.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "f9b2a5f8afee0efd"
+  },
+  {
+    "date": "14/2/2026",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "9ba61b1d784b60de"
+  },
+  {
+    "date": "10/2/2026",
+    "amount": -18.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "589f6a33076c2859"
+  },
+  {
+    "date": "12/2/2026",
+    "amount": -300.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "178f10b42feb7779"
+  },
+  {
+    "date": "9/2/2026",
+    "amount": -22.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "8b520ce916c32a85"
+  },
+  {
+    "date": "11/2/2026",
+    "amount": -119.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "b7c521011fad429b"
+  },
+  {
+    "date": "11/2/2026",
+    "amount": -77.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "ee08c5da4d8ec8ab"
+  },
+  {
+    "date": "8/2/2026",
+    "amount": -15.0,
+    "description": "Ricarica Telefonica",
+    "type": "T.i.m.",
+    "id": "1349762837c90611"
+  },
+  {
+    "date": "7/2/2026",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "48ba989966ab1c69"
+  },
+  {
+    "date": "3/2/2026",
+    "amount": -352.0,
+    "description": "Fisioterapia Clodio",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e8e045233c113253"
+  },
+  {
+    "date": "3/2/2026",
+    "amount": -63.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a5d46032c2b0f1a5"
+  },
+  {
+    "date": "5/2/2026",
+    "amount": -669.92,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "4526553ac131c8d5"
+  },
+  {
+    "date": "5/2/2026",
+    "amount": -92.63,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "8b42774eb4adf63f"
+  },
+  {
+    "date": "5/2/2026",
+    "amount": -72.78,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "5e22be0d1fa8cdbd"
+  },
+  {
+    "date": "4/2/2026",
+    "amount": -72.37,
+    "description": "Addebito Diretto",
+    "type": "Paypal (europe) S.a R.l.",
+    "id": "49857af1ecbe2631"
+  },
+  {
+    "date": "2/2/2026",
+    "amount": -27.78,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "8ac33de734fb675a"
+  },
+  {
+    "date": "1/2/2026",
+    "amount": -1500.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "4a352f9b514bf18f"
+  },
+  {
+    "date": "30/1/2026",
+    "amount": -4.14,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "048a7b27aaa577c7"
+  },
+  {
+    "date": "28/1/2026",
+    "amount": -14.6,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ee29bfde073507d4"
+  },
+  {
+    "date": "28/1/2026",
+    "amount": -11.5,
+    "description": "Li E Li Srls",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ed853a0469022c6a"
+  },
+  {
+    "date": "28/1/2026",
+    "amount": -5.54,
+    "description": "Artemisa Lab Analysis",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "5f784cb888314c19"
+  },
+  {
+    "date": "2/2/2026",
+    "amount": 3053.46,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "b719d30c3b5e146d"
+  },
+  {
+    "date": "30/1/2026",
+    "amount": 2800.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "9f8b6c3fe86d6c16"
+  },
+  {
+    "date": "30/1/2026",
+    "amount": -242.5,
+    "description": "Addebito Diretto",
+    "type": "Cofidis S.a.",
+    "id": "0cf3324a3399302f"
+  },
+  {
+    "date": "30/1/2026",
+    "amount": -26.45,
+    "description": "Addebito Diretto",
+    "type": "Paypal (europe) S.a R.l.",
+    "id": "8a22efa04482b842"
+  },
+  {
+    "date": "24/1/2026",
+    "amount": -28.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "16df9d96ee8e72c2"
+  },
+  {
+    "date": "28/1/2026",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "26c299d8b61ed6c2"
+  },
+  {
+    "date": "17/1/2026",
+    "amount": -72.4,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "3e00bb33cb1e1c4e"
+  },
+  {
+    "date": "17/1/2026",
+    "amount": -53.0,
+    "description": "San Giovanni In Latera",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "97b23ec4904a6b0f"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -268.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "0c777d745ab323f0"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -259.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "ea8e262036ee743e"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -119.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "b5a715e06a378f9c"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -77.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "2e468f69c3f0d03a"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -65.6,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "fc24b5f18a6ea0ad"
+  },
+  {
+    "date": "19/1/2026",
+    "amount": -65.6,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "fc24b5f18a6ea0ad"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio Documento Trasparenza N. 003025/6327 Al 31.12.25",
+    "id": "47e3b405ca039ba7"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio E/c C/c N. 003025/6327 Al 31.12.25",
+    "id": "3a3f6d7de6ddda27"
+  },
+  {
+    "date": "16/1/2026",
+    "amount": -1400.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "32d45bbffebdb397"
+  },
+  {
+    "date": "14/1/2026",
+    "amount": -1000.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "eede625ff2735cb2"
+  },
+  {
+    "date": "11/1/2026",
+    "amount": -48.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a9c33aea8d2bcbdf"
+  },
+  {
+    "date": "13/1/2026",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Da Internet",
+    "id": "6efc97df1fedc8e6"
+  },
+  {
+    "date": "13/1/2026",
+    "amount": -500.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Thomas Munns",
+    "id": "1ce453667713e3ff"
+  },
+  {
+    "date": "13/1/2026",
+    "amount": -1060.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf2",
+    "id": "a1cbdf0361a85d78"
+  },
+  {
+    "date": "12/1/2026",
+    "amount": -1500.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf2",
+    "id": "721fedd9a648aa0e"
+  },
+  {
+    "date": "12/1/2026",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r. Olimpia S.r.l.",
+    "id": "3918be089ca375c1"
+  },
+  {
+    "date": "3/1/2026",
+    "amount": -119.9,
+    "description": "Keep Man",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b0a8bad39ffe4dce"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -29.68,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "74c20dffd9999520"
+  },
+  {
+    "date": "2/1/2026",
+    "amount": -18.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "7686112b9a4d9268"
+  },
+  {
+    "date": "3/1/2026",
+    "amount": -17.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a7f5cf4987990716"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -13.0,
+    "description": "Li E Li Srls",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "3012d0a33d0303fa"
+  },
+  {
+    "date": "3/1/2026",
+    "amount": -900.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "33492e22907c6101"
+  },
+  {
+    "date": "5/1/2026",
+    "amount": -791.03,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "f36a3ab08a259f3f"
+  },
+  {
+    "date": "5/1/2026",
+    "amount": -67.72,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "0a2871002d57d15f"
+  },
+  {
+    "date": "5/1/2026",
+    "amount": -40.57,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "5b237d23783be882"
+  },
+  {
+    "date": "5/1/2026",
+    "amount": 3053.46,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "57ff7528eec4f30b"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -8.61,
+    "description": "Addebito Imposte",
+    "type": "Imposte Di Bollo Conto Corrente",
+    "id": "0c4aff153080424c"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": 0.61,
+    "description": "Accredito Di Conto Corrente",
+    "type": "Accredito Interessi Creditori",
+    "id": "4c425162c11872ac"
+  },
+  {
+    "date": "2/1/2026",
+    "amount": -1200.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "e1384fcabd3d3103"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -4.14,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "52e3fe18ac167195"
+  },
+  {
+    "date": "1/1/2026",
+    "amount": -800.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "3ceb8d5ab5b17134"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "30a61140161812fb"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -31.45,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Caf Fido 001 Credito In C/c Ordinario Italia Ordin",
+    "id": "2084ff82415e112b"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -2.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "Addebito",
+    "id": "cacd726d6393d487"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf3",
+    "id": "ad73deb1ad1e9900"
+  },
+  {
+    "date": "31/12/2025",
+    "amount": -250.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "d4e6c763622b6396"
+  },
+  {
+    "date": "25/12/2025",
+    "amount": -126.0,
+    "description": "La Dogana Food",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "8a1ae44ae31298d0"
+  },
+  {
+    "date": "30/12/2025",
+    "amount": -26.45,
+    "description": "Addebito Diretto",
+    "type": "Paypal (europe) S.a R.l.",
+    "id": "49389f744b5d676c"
+  },
+  {
+    "date": "29/12/2025",
+    "amount": 4.3,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Amazon Media Eu S.a R.l.",
+    "id": "e472c4e445bd7be2"
+  },
+  {
+    "date": "20/12/2025",
+    "amount": -26.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b83b2a64ffc86804"
+  },
+  {
+    "date": "28/12/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "4276511e2dec43c6"
+  },
+  {
+    "date": "24/12/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "6bfec0328daa8442"
+  },
+  {
+    "date": "19/12/2025",
+    "amount": -602.0,
+    "description": "Fisioterapia Clodio",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "cfb8dd9eb5d1891d"
+  },
+  {
+    "date": "24/12/2025",
+    "amount": -18.66,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "1bd6322c7eaa90e6"
+  },
+  {
+    "date": "24/12/2025",
+    "amount": -18.65,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "6fd8a48240d0a0f0"
+  },
+  {
+    "date": "23/12/2025",
+    "amount": -300.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "c36bf4d72008fa79"
+  },
+  {
+    "date": "19/12/2025",
+    "amount": 48.0,
+    "description": "Bonifico Ordinario In Entrata",
+    "type": "Da: Fondo Assistenza Sanitaria Integrat",
+    "id": "b0cc109d06777964"
+  },
+  {
+    "date": "19/12/2025",
+    "amount": -119.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "b27414f3027149ca"
+  },
+  {
+    "date": "19/12/2025",
+    "amount": -77.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "9e9eb31d9532b7a2"
+  },
+  {
+    "date": "19/12/2025",
+    "amount": -55.92,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "d1c2e1939252ce2a"
+  },
+  {
+    "date": "18/12/2025",
+    "amount": -1501.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: Nicola Mondaini",
+    "id": "5e854bb381f590a6"
+  },
+  {
+    "date": "11/12/2025",
+    "amount": -22.46,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "08cf37eb8cfe5c23"
+  },
+  {
+    "date": "16/12/2025",
+    "amount": -13.2,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Carta Debito Rinnovi Mc Quota Annuale 2025",
+    "id": "da0f806bf0401b5d"
+  },
+  {
+    "date": "13/12/2025",
+    "amount": -640.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "dc4dd437fa45ad55"
+  },
+  {
+    "date": "12/12/2025",
+    "amount": -608.0,
+    "description": "Imposte E Tasse",
+    "type": "Pagamento F24",
+    "id": "929e83b68f51f042"
+  },
+  {
+    "date": "8/12/2025",
+    "amount": -65.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ef62d90b28dc2a97"
+  },
+  {
+    "date": "8/12/2025",
+    "amount": -23.8,
+    "description": "Farmacia Marconi",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a0ba33f04903fcd5"
+  },
+  {
+    "date": "11/12/2025",
+    "amount": -131.0,
+    "description": "Giroconto E Bonifici Da Terzi",
+    "type": "Vostro Bonifico - Spese: 1,00eur Web-051024115246 Bc Fav 08327-03253 G.r. Olimpia S",
+    "id": "6f00e47b6b53d4e9"
+  },
+  {
+    "date": "5/12/2025",
+    "amount": -16.5,
+    "description": "Li E Li Srls",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "82a20a70ec6aa829"
+  },
+  {
+    "date": "10/12/2025",
+    "amount": -260.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "37e8d66c8afe7567"
+  },
+  {
+    "date": "9/12/2025",
+    "amount": -448.13,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "36e12eb694cdc201"
+  },
+  {
+    "date": "5/12/2025",
+    "amount": -57.04,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "f74444c51d64c28d"
+  },
+  {
+    "date": "5/12/2025",
+    "amount": -38.81,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "2a3190fb01ae7127"
+  },
+  {
+    "date": "28/11/2025",
+    "amount": -19.3,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "280e5a3c1a8895f8"
+  },
+  {
+    "date": "2/12/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "5f4ca26ceda09b1d"
+  },
+  {
+    "date": "1/12/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "e122f26570e4fea2"
+  },
+  {
+    "date": "30/11/2025",
+    "amount": -1110.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "5c61cd10e134b59f"
+  },
+  {
+    "date": "28/11/2025",
+    "amount": -4.14,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "319d1df9bc6602af"
+  },
+  {
+    "date": "1/12/2025",
+    "amount": -825.0,
+    "description": "Addebito Diretto",
+    "type": "F.a.s.i.",
+    "id": "a51813af4a9c51f9"
+  },
+  {
+    "date": "1/12/2025",
+    "amount": 6431.9,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "c9b3cf12d9e5dce1"
+  },
+  {
+    "date": "28/11/2025",
+    "amount": -127.54,
+    "description": "Imposte E Tasse",
+    "type": "Pagamento F24",
+    "id": "279f108520236f7f"
+  },
+  {
+    "date": "28/11/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "db44e652f905ee7a"
+  },
+  {
+    "date": "27/11/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Da Internet",
+    "id": "a254e63dfa1c3fbf"
+  },
+  {
+    "date": "27/11/2025",
+    "amount": -71.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Domino S.r.l.",
+    "id": "ca29b7d0d8c502cf"
+  },
+  {
+    "date": "26/11/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Da Internet",
+    "id": "5e3b65eae1d6af8c"
+  },
+  {
+    "date": "26/11/2025",
+    "amount": -200.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Vicariato Di Roma",
+    "id": "231d0bf9c852d6eb"
+  },
+  {
+    "date": "21/11/2025",
+    "amount": -41.0,
+    "description": "San Giovanni In Latera",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e35c08bb96aba00e"
+  },
+  {
+    "date": "24/11/2025",
+    "amount": 72.44,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Google Ireland Limited",
+    "id": "ac206497cd412b4c"
+  },
+  {
+    "date": "18/11/2025",
+    "amount": -56.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "014e46ad324488f8"
+  },
+  {
+    "date": "20/11/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000514c",
+    "id": "14480f87d4c6a321"
+  },
+  {
+    "date": "20/11/2025",
+    "amount": -300.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "8db4bad114ffc5e4"
+  },
+  {
+    "date": "13/11/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "91c411651f20f514"
+  },
+  {
+    "date": "14/11/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf3",
+    "id": "936ddabf2ec94abe"
+  },
+  {
+    "date": "11/11/2025",
+    "amount": -27.0,
+    "description": "L'arcano Srl",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "140951c778e7fbf4"
+  },
+  {
+    "date": "14/11/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000512c",
+    "id": "9f39cf3f262b6523"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -4.14,
+    "description": "Canoni",
+    "type": "Canone Di Conto Corrente",
+    "id": "39cc818ffc4524bc"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": 4.32,
+    "description": "Entrate, Accrediti Vari E Storni",
+    "type": "Storno Scrittura Per Canone Di Ottobre",
+    "id": "6391f44d848d65f9"
+  },
+  {
+    "date": "11/11/2025",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r. Olimpia S.r.l.",
+    "id": "ec43e2f4c8a7f2be"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -52.0,
+    "description": "Asl Villa Betania Giom",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "c0eea75b812e1e73"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -40.0,
+    "description": "Artemisia",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "2cef07f82d2e6cc7"
+  },
+  {
+    "date": "4/11/2025",
+    "amount": -25.0,
+    "description": "L'arcano Srl",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "011b2806ab50f915"
+  },
+  {
+    "date": "6/11/2025",
+    "amount": -238.67,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "823fb3bc09dc4419"
+  },
+  {
+    "date": "6/11/2025",
+    "amount": -196.83,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "dab373c1b8aa184f"
+  },
+  {
+    "date": "6/11/2025",
+    "amount": -119.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "2a489b29c076abe5"
+  },
+  {
+    "date": "6/11/2025",
+    "amount": -77.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "9523436346c72fa5"
+  },
+  {
+    "date": "3/11/2025",
+    "amount": -17.12,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "9a82264c4a3842d1"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000508c",
+    "id": "37fc67983f7dbe39"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "ca6489019352b99b"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -697.08,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "144bfef4022a2fe9"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -109.43,
+    "description": "Nwg Energia S P A Socie",
+    "type": "Addebito Utenze",
+    "id": "27203383e0ae6197"
+  },
+  {
+    "date": "5/11/2025",
+    "amount": -80.28,
+    "description": "Nwg Energia S P A Socie",
+    "type": "Addebito Utenze",
+    "id": "b1e909826362099d"
+  },
+  {
+    "date": "29/10/2025",
+    "amount": -40.0,
+    "description": "Artemisia",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e1f74b7b2c4d9d8c"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -40.0,
+    "description": "Artemisia",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e38496bb7ef9420c"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -10.4,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "edbc41ea3cce796d"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -4.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "1a3c389afc81a5ef"
+  },
+  {
+    "date": "3/11/2025",
+    "amount": -128.08,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "cee3871a5497acf9"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -4.32,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "4d68a27655f088f1"
+  },
+  {
+    "date": "3/11/2025",
+    "amount": 3003.37,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "1b420e96a9ca43bf"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": -1090.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "aefd05a6de345a13"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "d4bdf4dbaf775716"
+  },
+  {
+    "date": "31/10/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000501c",
+    "id": "5f7473fb3aa77c11"
+  },
+  {
+    "date": "25/10/2025",
+    "amount": -22.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "8909477a84b699d9"
+  },
+  {
+    "date": "25/10/2025",
+    "amount": -52.03,
+    "description": "San Giovanni In Latera",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "1235950720a4e879"
+  },
+  {
+    "date": "24/10/2025",
+    "amount": -40.0,
+    "description": "Artemisia",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "c54366ead3957f22"
+  },
+  {
+    "date": "23/10/2025",
+    "amount": -31.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "cc48e58fc76b5b6c"
+  },
+  {
+    "date": "28/10/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "8890c11be7c8404e"
+  },
+  {
+    "date": "27/10/2025",
+    "amount": -304.36,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "abdf150d4389814f"
+  },
+  {
+    "date": "27/10/2025",
+    "amount": -297.4,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "1f6882d54ae55931"
+  },
+  {
+    "date": "24/10/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "42a0c7bf4abdcf4e"
+  },
+  {
+    "date": "24/10/2025",
+    "amount": 0.01,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Amazon Media Eu S.a R.l.",
+    "id": "a42aaddd98e595bb"
+  },
+  {
+    "date": "24/10/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000496c",
+    "id": "03bf294a58c0f293"
+  },
+  {
+    "date": "16/10/2025",
+    "amount": -276.23,
+    "description": "Careddu Giovanni E Fig",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e99c795d91bde207"
+  },
+  {
+    "date": "16/10/2025",
+    "amount": -57.0,
+    "description": "San Giovanni In Latera",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "c93407966211518b"
+  },
+  {
+    "date": "21/10/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "cea21d6a8387e882"
+  },
+  {
+    "date": "21/10/2025",
+    "amount": 0.0,
+    "description": "Addebito",
+    "type": "Cancellazione Impegno Cod-riferimento 000000494c",
+    "id": "37e60d1d8b3e5a55"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio Documento Trasparenza N. 003025/6327 Al 30.09.25",
+    "id": "b5524788913bd63d"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio E/c C/c N. 003025/6327 Al 30.09.25",
+    "id": "3dc904a3c4c4842c"
+  },
+  {
+    "date": "14/10/2025",
+    "amount": -41.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "2215712b03a0e1e1"
+  },
+  {
+    "date": "14/10/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "bd20bd664cad82cd"
+  },
+  {
+    "date": "14/10/2025",
+    "amount": -210.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "c112e727c980317f"
+  },
+  {
+    "date": "13/10/2025",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r. Olimpia S.r.l.",
+    "id": "52977308d642f7dd"
+  },
+  {
+    "date": "10/10/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Da Internet",
+    "id": "a42ed9852c112c8b"
+  },
+  {
+    "date": "10/10/2025",
+    "amount": -300.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: A.p.s Sotto Il Cielo Di Roma",
+    "id": "3cd1458563a80cfd"
+  },
+  {
+    "date": "8/10/2025",
+    "amount": -140.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "d8b25501226fef0d"
+  },
+  {
+    "date": "5/10/2025",
+    "amount": -12.1,
+    "description": "Artemisa Lab Analysis",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "540f90b40061ccf0"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": 3.73,
+    "description": "Entrate, Accrediti Vari E Storni",
+    "type": "Storno Scrittura Per Canone Di Settembre Per Conto Corre",
+    "id": "50ba3cf9afbc7111"
+  },
+  {
+    "date": "4/10/2025",
+    "amount": -25.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "3505c8b052fa0f24"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -4.14,
+    "description": "Canoni",
+    "type": "Canone Di Conto Corrente",
+    "id": "75472c2fe781dc56"
+  },
+  {
+    "date": "6/10/2025",
+    "amount": -425.91,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "8130e0aec8352689"
+  },
+  {
+    "date": "6/10/2025",
+    "amount": -130.46,
+    "description": "Nwg Energia S P A Socie",
+    "type": "Addebito Utenze",
+    "id": "c20454ab49395baa"
+  },
+  {
+    "date": "6/10/2025",
+    "amount": -113.93,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "b508daaf34ed2606"
+  },
+  {
+    "date": "1/10/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "6a5663e659911d87"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -8.61,
+    "description": "Addebito Imposte",
+    "type": "Imposte Di Bollo Conto Corrente",
+    "id": "81ef9b4f02cde8b7"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -3.73,
+    "description": "Canoni",
+    "type": "Canone Di Conto Corrente",
+    "id": "a63ad8ebdd6f2f83"
+  },
+  {
+    "date": "1/10/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "89275f9c23bfe914"
+  },
+  {
+    "date": "1/10/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "d430452d7e4b9bc9"
+  },
+  {
+    "date": "26/9/2025",
+    "amount": -55.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a5dc3ac615959418"
+  },
+  {
+    "date": "27/9/2025",
+    "amount": -24.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ce1450513d765028"
+  },
+  {
+    "date": "28/9/2025",
+    "amount": -8.17,
+    "description": "Conad City",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "12412de607cbd632"
+  },
+  {
+    "date": "1/10/2025",
+    "amount": 3003.38,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "93906f2be00d3a47"
+  },
+  {
+    "date": "30/9/2025",
+    "amount": -31.45,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Caf Fido 001 Credito In C/c Ordinario Italia Ordin",
+    "id": "d5a88b63a8e40704"
+  },
+  {
+    "date": "27/9/2025",
+    "amount": -23.13,
+    "description": "Artemisia Lab",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ab72c0698096bea1"
+  },
+  {
+    "date": "27/9/2025",
+    "amount": -5.54,
+    "description": "Artemisa Lab Analysis",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "bf4d7d8061cc4a56"
+  },
+  {
+    "date": "28/9/2025",
+    "amount": -150.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "73c1e3c4980de8e0"
+  },
+  {
+    "date": "28/9/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "787cdeafa6983fce"
+  },
+  {
+    "date": "23/9/2025",
+    "amount": -25.0,
+    "description": "Ortopedia Veltro",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "1b463f4a987cd602"
+  },
+  {
+    "date": "21/9/2025",
+    "amount": -65.7,
+    "description": "Konan",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "14f2a6db65d5e0b0"
+  },
+  {
+    "date": "17/9/2025",
+    "amount": -16.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ed90021f372d9678"
+  },
+  {
+    "date": "19/9/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf2",
+    "id": "90bac64c3ab968c8"
+  },
+  {
+    "date": "18/9/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "fbfb321e30ff4c5b"
+  },
+  {
+    "date": "18/9/2025",
+    "amount": -391.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Thomas Munns",
+    "id": "5800c18dd31258ab"
+  },
+  {
+    "date": "15/9/2025",
+    "amount": -58.4,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "33cb9dc194134456"
+  },
+  {
+    "date": "14/9/2025",
+    "amount": -160.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "51fac0916bc6f9a3"
+  },
+  {
+    "date": "13/9/2025",
+    "amount": -35.0,
+    "description": "Mannello Snc",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "89e57498a8cba8e2"
+  },
+  {
+    "date": "13/9/2025",
+    "amount": -21.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "d76e0c95afe57bfe"
+  },
+  {
+    "date": "15/9/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "54e44632f5827040"
+  },
+  {
+    "date": "15/9/2025",
+    "amount": -158.72,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Nwg Energia Spa Societa Benefit",
+    "id": "39cad308328aaf37"
+  },
+  {
+    "date": "15/9/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf3",
+    "id": "868ae8a56cb319ee"
+  },
+  {
+    "date": "11/9/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "e5ba9e702f07f4f3"
+  },
+  {
+    "date": "11/9/2025",
+    "amount": -130.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "974cb7bad35752ac"
+  },
+  {
+    "date": "4/9/2025",
+    "amount": -21.1,
+    "description": "Feltrinelli Rm",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "82d55b8409b29778"
+  },
+  {
+    "date": "5/9/2025",
+    "amount": -33.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "7bd80f00482d2ac4"
+  },
+  {
+    "date": "3/9/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b9e27ed05f034ee1"
+  },
+  {
+    "date": "3/9/2025",
+    "amount": -10.3,
+    "description": "Poste Italiane",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "af5700950b89c399"
+  },
+  {
+    "date": "5/9/2025",
+    "amount": -564.02,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "9fd085e20f14e6ad"
+  },
+  {
+    "date": "5/9/2025",
+    "amount": -127.01,
+    "description": "Nwg Energia S P A Socie",
+    "type": "Addebito Utenze",
+    "id": "8fff03cf3462b5a5"
+  },
+  {
+    "date": "4/9/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "3c29a763d96da538"
+  },
+  {
+    "date": "2/9/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "95250e7d8545dfd9"
+  },
+  {
+    "date": "29/8/2025",
+    "amount": -85.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "d8579f190a9c1215"
+  },
+  {
+    "date": "29/8/2025",
+    "amount": -5.54,
+    "description": "Artemisia Lab",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "da836eefe71b2476"
+  },
+  {
+    "date": "1/9/2025",
+    "amount": -1150.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf2",
+    "id": "454a8e01ae034002"
+  },
+  {
+    "date": "30/8/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "219468b38e8b0d25"
+  },
+  {
+    "date": "30/8/2025",
+    "amount": -246.25,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Az Assicurazioni",
+    "id": "b02fc700aa317525"
+  },
+  {
+    "date": "29/8/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "503a246abce04972"
+  },
+  {
+    "date": "1/9/2025",
+    "amount": -825.0,
+    "description": "Addebito Diretto",
+    "type": "F.a.s.i.",
+    "id": "d2cb20c0bbb6aa5c"
+  },
+  {
+    "date": "27/8/2025",
+    "amount": -95.0,
+    "description": "Centro Ottico Franca F",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "1ed707cc89c1e662"
+  },
+  {
+    "date": "1/9/2025",
+    "amount": 3003.38,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "af268a4379766b16"
+  },
+  {
+    "date": "29/8/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "013278b5226630c7"
+  },
+  {
+    "date": "26/8/2025",
+    "amount": -27.0,
+    "description": "Artemisia Lab",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e18dfa1b0a824e83"
+  },
+  {
+    "date": "28/8/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "8d25674afbbad60c"
+  },
+  {
+    "date": "20/8/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "f5cbeb05eb3a3544"
+  },
+  {
+    "date": "21/8/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "a24eba87f0c57b68"
+  },
+  {
+    "date": "21/8/2025",
+    "amount": -82.39,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Netsons S.r.l.",
+    "id": "f1cec9382a032f9f"
+  },
+  {
+    "date": "16/8/2025",
+    "amount": -20.0,
+    "description": "Ricarica Telefonica",
+    "type": "Omnitel",
+    "id": "e601d5a206b7a1ab"
+  },
+  {
+    "date": "19/8/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "5348676dfcf16385"
+  },
+  {
+    "date": "19/8/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "e858e1aadc178b98"
+  },
+  {
+    "date": "14/8/2025",
+    "amount": -82.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "a745191ce8ef69c0"
+  },
+  {
+    "date": "16/8/2025",
+    "amount": -24.99,
+    "description": "Deichmann Calzature S.",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "8e4f6b05521e7935"
+  },
+  {
+    "date": "13/8/2025",
+    "amount": -10.84,
+    "description": "Eurospin Lazio Pv285el",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "80f4aad7d3d7c66d"
+  },
+  {
+    "date": "10/8/2025",
+    "amount": -60.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e5f14bbebed2d67f"
+  },
+  {
+    "date": "10/8/2025",
+    "amount": -5.33,
+    "description": "Conad Minorca Srl",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "661985294d9884cf"
+  },
+  {
+    "date": "12/8/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "eda25cf9e72ac712"
+  },
+  {
+    "date": "12/8/2025",
+    "amount": -300.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "5cd8f9ea7e69aa6f"
+  },
+  {
+    "date": "12/8/2025",
+    "amount": -295.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "14a49dfec7e227c6"
+  },
+  {
+    "date": "8/8/2025",
+    "amount": -90.0,
+    "description": "Centro Ottico Franca F",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "5eade7de75747df8"
+  },
+  {
+    "date": "8/8/2025",
+    "amount": -30.4,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b948c758438573c7"
+  },
+  {
+    "date": "9/8/2025",
+    "amount": -18.37,
+    "description": "Acqua E Sapone",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "983cc31abef1783e"
+  },
+  {
+    "date": "7/8/2025",
+    "amount": -12.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "3458621f165ff1d6"
+  },
+  {
+    "date": "11/8/2025",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "d8deacd007aa383c"
+  },
+  {
+    "date": "6/8/2025",
+    "amount": -20.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "8f589939c131ec41"
+  },
+  {
+    "date": "6/8/2025",
+    "amount": -20.0,
+    "description": "Centro Diagnostico Pig",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "66542ec7c7db4686"
+  },
+  {
+    "date": "5/8/2025",
+    "amount": -27.0,
+    "description": "Artemisia",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "05980c08caec3553"
+  },
+  {
+    "date": "5/8/2025",
+    "amount": -25.8,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "3f6e9fcf6a0274c3"
+  },
+  {
+    "date": "4/8/2025",
+    "amount": -62.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b3c2422fedb87bde"
+  },
+  {
+    "date": "2/8/2025",
+    "amount": -16.2,
+    "description": "Areonautica Militare",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "4569c99b65a1f5ef"
+  },
+  {
+    "date": "5/8/2025",
+    "amount": -260.76,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "a9f5069a4b83cb93"
+  },
+  {
+    "date": "5/8/2025",
+    "amount": -122.43,
+    "description": "Addebito",
+    "type": "Addebito Utenze",
+    "id": "62d1663b98a0b18e"
+  },
+  {
+    "date": "4/8/2025",
+    "amount": -57.25,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "cc7dfc5f568842a3"
+  },
+  {
+    "date": "30/7/2025",
+    "amount": -37.9,
+    "description": "Hotel San Giorgio",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "7a55e37b3c06b1b3"
+  },
+  {
+    "date": "1/8/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "74619f7a206d3755"
+  },
+  {
+    "date": "31/7/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "3139b8545fcb1ace"
+  },
+  {
+    "date": "1/8/2025",
+    "amount": 4666.38,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "41760d59b5fd3bfc"
+  },
+  {
+    "date": "31/7/2025",
+    "amount": -66.28,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "54399cd0075d9706"
+  },
+  {
+    "date": "31/7/2025",
+    "amount": -151.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: Associazione Sotto Il Cielo Di Roma",
+    "id": "fdc0d1963362a4d2"
+  },
+  {
+    "date": "28/7/2025",
+    "amount": -15.52,
+    "description": "D'amico Siro Srl",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "0a7eeddfa3b31ca0"
+  },
+  {
+    "date": "27/7/2025",
+    "amount": -54.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "d7389e57537e1d9c"
+  },
+  {
+    "date": "29/7/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "467b813765be356a"
+  },
+  {
+    "date": "25/7/2025",
+    "amount": -40.0,
+    "description": "Pedicure M. Capanna",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b99c827112a67bbd"
+  },
+  {
+    "date": "23/7/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "51517ff2ac2f0091"
+  },
+  {
+    "date": "22/7/2025",
+    "amount": -4.35,
+    "description": "Conad City",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "70011c5f0fe9aca5"
+  },
+  {
+    "date": "28/7/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "bfc86675db0161cc"
+  },
+  {
+    "date": "25/7/2025",
+    "amount": -200.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "ca67e5480a850848"
+  },
+  {
+    "date": "21/7/2025",
+    "amount": -9.8,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "98c559cc308f6c7a"
+  },
+  {
+    "date": "22/7/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "9c91dd65c1b64260"
+  },
+  {
+    "date": "22/7/2025",
+    "amount": 73.35,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Google Ireland Limited",
+    "id": "8776374bdfde3e63"
+  },
+  {
+    "date": "17/7/2025",
+    "amount": -25.09,
+    "description": "Deichmann Calzature S.",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "eeaa6604d8af2ab9"
+  },
+  {
+    "date": "16/7/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "feeea7a3324814fa"
+  },
+  {
+    "date": "17/7/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "8ecd965c972a668f"
+  },
+  {
+    "date": "30/12/2024",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Recupero Spese Per Carta Di Debito N. 34843370 Documenti Di Trasparenza Ex Del. Cicr 04/03/03",
+    "id": "bf6a19d2a697b0fb"
+  },
+  {
+    "date": "30/12/2024",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Recupero Spese Per Carta Di Debito N. 32455323 Documenti Di Trasparenza Ex Del. Cicr 04/03/03",
+    "id": "194e7ac6582ec8b8"
+  },
+  {
+    "date": "15/7/2025",
+    "amount": -650.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf3",
+    "id": "216a89e7bab9ff9c"
+  },
+  {
+    "date": "15/7/2025",
+    "amount": -402.63,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "8559dfb54a5c9616"
+  },
+  {
+    "date": "15/7/2025",
+    "amount": -291.63,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "0e0c772430fc36ff"
+  },
+  {
+    "date": "11/7/2025",
+    "amount": -16.9,
+    "description": "Farmacia Marconi",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "51f00312cc204fac"
+  },
+  {
+    "date": "9/7/2025",
+    "amount": -33.45,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e67c04f53b4142c4"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio Documento Trasparenza N. 003025/6327 Al 30.06.25",
+    "id": "333e61b1ccbfdf11"
+  },
+  {
+    "date": "8/7/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "932206205f11e2bf"
+  },
+  {
+    "date": "9/7/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "dca9615bafedd830"
+  },
+  {
+    "date": "5/7/2025",
+    "amount": -65.7,
+    "description": "Konan",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b0a45b401351ddb8"
+  },
+  {
+    "date": "8/7/2025",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "e2a7135a36bb2cb9"
+  },
+  {
+    "date": "3/7/2025",
+    "amount": -28.5,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "be0bc46bb580c614"
+  },
+  {
+    "date": "1/7/2025",
+    "amount": -12.12,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "ea445c382e1b030d"
+  },
+  {
+    "date": "1/7/2025",
+    "amount": -3.4,
+    "description": "L'antico Caffe' Della",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "2e4bf701a6d1cf55"
+  },
+  {
+    "date": "4/7/2025",
+    "amount": -50.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "b3052eceb3d25cdd"
+  },
+  {
+    "date": "6/7/2025",
+    "amount": -964.6,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "86a79af5463fafcd"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": -29.0,
+    "description": "Ospedale San Carlo Di",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "fa7c825f0a76121a"
+  },
+  {
+    "date": "2/7/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "90ecbe2800359601"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -8.52,
+    "description": "Addebito Imposte",
+    "type": "Imposte Di Bollo Conto Corrente",
+    "id": "dfb845c830b58dbf"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": 700.0,
+    "description": "Bonifico Ordinario In Entrata",
+    "type": "Da: Venderequadri Societa&apos; A Respo",
+    "id": "1ea79d6dc4e7f06c"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "bea287505adcd7fc"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": -1680.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "c80e7d4c5109360e"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "06386e890a6815f0"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": -13.2,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Carta Debito Rinnovi Mc Quota Annuale 2025",
+    "id": "9e5a6f5d1f3b7ec0"
+  },
+  {
+    "date": "30/6/2025",
+    "amount": 3003.38,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "a4f3bf6f605a8436"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "a128fe53b0370d3f"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -31.45,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Caf Fido 001 Credito In C/c Ordinario Italia Ordin",
+    "id": "a13c8cf13cbf1118"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -150.67,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "04068a4177db7e12"
+  },
+  {
+    "date": "29/6/2025",
+    "amount": -60.57,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "89c8d08d358e63b9"
+  },
+  {
+    "date": "27/6/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "e5377dec4a2f7c13"
+  },
+  {
+    "date": "22/6/2025",
+    "amount": -57.09,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "82e681d45ba38922"
+  },
+  {
+    "date": "19/6/2025",
+    "amount": -37.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "c01c7c28cb0aa41c"
+  },
+  {
+    "date": "19/6/2025",
+    "amount": -16.6,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "84dd2b3415bfaa79"
+  },
+  {
+    "date": "20/6/2025",
+    "amount": -12.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "94927abb78a8230d"
+  },
+  {
+    "date": "23/6/2025",
+    "amount": 500.0,
+    "description": "Bonifico Ordinario In Entrata",
+    "type": "Da: Associazione Di Promozione Sociale",
+    "id": "d7c17ca2bb58d964"
+  },
+  {
+    "date": "14/6/2025",
+    "amount": -64.2,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Tramite Pos",
+    "id": "8ef4ef6c7007d77d"
+  },
+  {
+    "date": "13/6/2025",
+    "amount": -39.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Tramite Pos",
+    "id": "2fcc32b9db04e8bd"
+  },
+  {
+    "date": "15/6/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "b053774f08001675"
+  },
+  {
+    "date": "11/6/2025",
+    "amount": -15.0,
+    "description": "Ricarica Telefonica",
+    "type": "T.i.m.",
+    "id": "41d1684cc6950e58"
+  },
+  {
+    "date": "13/6/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "4e2c094d55ccada1"
+  },
+  {
+    "date": "13/6/2025",
+    "amount": 70.0,
+    "description": "Bonifico Ordinario In Entrata",
+    "type": "Da: Fondo Assistenza Sanitaria Integrat",
+    "id": "1dafec1f09944f04"
+  },
+  {
+    "date": "8/6/2025",
+    "amount": -30.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e940f8fb9853a3e1"
+  },
+  {
+    "date": "4/6/2025",
+    "amount": -79.9,
+    "description": "Careddu Giovanni E Fig",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e7376c1dd881559c"
+  },
+  {
+    "date": "6/6/2025",
+    "amount": -26.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "9fbc28d8b94fea2d"
+  },
+  {
+    "date": "4/6/2025",
+    "amount": -25.0,
+    "description": "Ortopedia Veltro",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "98abafc41fb931fa"
+  },
+  {
+    "date": "4/6/2025",
+    "amount": -17.8,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "52b881ff173136d0"
+  },
+  {
+    "date": "9/6/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "9abb2b3d7537176a"
+  },
+  {
+    "date": "9/6/2025",
+    "amount": -130.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "20a3abb92bc2b602"
+  },
+  {
+    "date": "3/6/2025",
+    "amount": -82.0,
+    "description": "Estesan Laser Srl Arte",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "30aad26f85daee2e"
+  },
+  {
+    "date": "3/6/2025",
+    "amount": -18.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "4c649c46dfda4919"
+  },
+  {
+    "date": "5/6/2025",
+    "amount": -200.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "585f93cbb6256f3a"
+  },
+  {
+    "date": "5/6/2025",
+    "amount": -301.31,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "7c3759d0f1e76ff7"
+  },
+  {
+    "date": "5/6/2025",
+    "amount": -151.53,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "c8bde7b92469c7bf"
+  },
+  {
+    "date": "30/5/2025",
+    "amount": -32.32,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "9313a9f96747b508"
+  },
+  {
+    "date": "2/6/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "d41909c5bbec2ce3"
+  },
+  {
+    "date": "2/6/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "13805328730035f8"
+  },
+  {
+    "date": "2/6/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "537a0d59dc462d6d"
+  },
+  {
+    "date": "30/5/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "f760ccd7531fcc58"
+  },
+  {
+    "date": "2/6/2025",
+    "amount": -825.0,
+    "description": "Addebito Diretto",
+    "type": "F.a.s.i.",
+    "id": "3e73f2297ab634e9"
+  },
+  {
+    "date": "28/5/2025",
+    "amount": -134.0,
+    "description": "Droppos",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "79f7dec74a62ea30"
+  },
+  {
+    "date": "28/5/2025",
+    "amount": -116.0,
+    "description": "Droppos",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "e54617d58b08b0ed"
+  },
+  {
+    "date": "28/5/2025",
+    "amount": -20.0,
+    "description": "Centro Diagnostico Pig",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "215da17447231857"
+  },
+  {
+    "date": "3/6/2025",
+    "amount": 3003.39,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "2d8d56af7dc9c259"
+  },
+  {
+    "date": "30/5/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "48cb483774c0a4f3"
+  },
+  {
+    "date": "25/5/2025",
+    "amount": -52.5,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "5958ba483adcc4ea"
+  },
+  {
+    "date": "28/5/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "36d63313579ccf31"
+  },
+  {
+    "date": "26/5/2025",
+    "amount": -200.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf3",
+    "id": "88dd0374fb944100"
+  },
+  {
+    "date": "20/5/2025",
+    "amount": -82.0,
+    "description": "Estesan Laser Srl Arte",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "7862e6e071e31990"
+  },
+  {
+    "date": "22/5/2025",
+    "amount": 118.62,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Google Ireland Limited",
+    "id": "531e81146b318f83"
+  },
+  {
+    "date": "21/5/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "1923b63d156abae5"
+  },
+  {
+    "date": "16/5/2025",
+    "amount": -25.0,
+    "description": "Ortopedia Veltro",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "cf4d11bc859f0e69"
+  },
+  {
+    "date": "15/5/2025",
+    "amount": -172.0,
+    "description": "Bozzoni Pantaleoni Fra",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "6b39c934462d85af"
+  },
+  {
+    "date": "16/5/2025",
+    "amount": -150.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "bdd5a13c3454746c"
+  },
+  {
+    "date": "15/5/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "1e06661a3a4f4feb"
+  },
+  {
+    "date": "11/5/2025",
+    "amount": -58.5,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Tramite Pos",
+    "id": "b1002179af405f71"
+  },
+  {
+    "date": "9/5/2025",
+    "amount": -12.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Tramite Pos",
+    "id": "c282bf110fe4b8af"
+  },
+  {
+    "date": "12/5/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "f39f17dd2c2da37b"
+  },
+  {
+    "date": "12/5/2025",
+    "amount": -30.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Associazione Fare Bene Onlus",
+    "id": "9472d104f12c1d39"
+  },
+  {
+    "date": "12/5/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "f39f17dd2c2da37b"
+  },
+  {
+    "date": "12/5/2025",
+    "amount": -130.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "4ee48bfa2ea80a30"
+  },
+  {
+    "date": "6/5/2025",
+    "amount": -51.0,
+    "description": "Ortopedia Veltro",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b11ac8240fe6839e"
+  },
+  {
+    "date": "6/5/2025",
+    "amount": -23.97,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "074a67d92a954c43"
+  },
+  {
+    "date": "8/5/2025",
+    "amount": -115.8,
+    "description": "Bonifico Per Detrazione",
+    "type": "A: Sicurezza Majorana",
+    "id": "d19e1df85f903c6e"
+  },
+  {
+    "date": "7/5/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "32de434d303fe035"
+  },
+  {
+    "date": "4/5/2025",
+    "amount": -12.1,
+    "description": "Artemisa Lab Analysis",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "44d2518e320dc7c8"
+  },
+  {
+    "date": "6/5/2025",
+    "amount": -598.23,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "75a4cbd06fd64870"
+  },
+  {
+    "date": "1/5/2025",
+    "amount": -19.3,
+    "description": "Bk Marconi",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "91b6510562e018a5"
+  },
+  {
+    "date": "5/5/2025",
+    "amount": -689.8,
+    "description": "Bonifico Per Detrazione",
+    "type": "A: Sicurezza Majorana",
+    "id": "fec1963f210d8c4e"
+  },
+  {
+    "date": "3/5/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "e9421173872d6049"
+  },
+  {
+    "date": "2/5/2025",
+    "amount": -125.0,
+    "description": "Bonifico Estero In Uscita",
+    "type": "A: Arciconfraternita S.anna De Parafrenieri",
+    "id": "e7326bb7f84fdc16"
+  },
+  {
+    "date": "2/5/2025",
+    "amount": -1.0,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Commissioni E Spese Su Operazioni Con L'estero Sepa",
+    "id": "7a24564501a5b693"
+  },
+  {
+    "date": "2/5/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "37fa253bf9950f19"
+  },
+  {
+    "date": "30/4/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "4a65f510c264d405"
+  },
+  {
+    "date": "2/5/2025",
+    "amount": 3003.39,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "7b75019b90ba5be1"
+  },
+  {
+    "date": "30/4/2025",
+    "amount": -82.18,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "abf79109e0005c09"
+  },
+  {
+    "date": "30/4/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "bd1b3aca51120a3d"
+  },
+  {
+    "date": "27/4/2025",
+    "amount": -20.5,
+    "description": "Bk Marconi",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "aac9114ebcf0cce3"
+  },
+  {
+    "date": "22/4/2025",
+    "amount": -39.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "5b0b0ba4a8b03dc6"
+  },
+  {
+    "date": "22/4/2025",
+    "amount": -27.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "df49a4f20a4f0749"
+  },
+  {
+    "date": "28/4/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "494a7ba38a6e4520"
+  },
+  {
+    "date": "20/4/2025",
+    "amount": -135.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "b855b9986b9375a1"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio Documento Trasparenza N. 003025/6327 Al 31.03.25",
+    "id": "169313681189a409"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -1.0,
+    "description": "Spese Di Bollo E Invio Documenti",
+    "type": "Spese Invio E/c C/c N. 003025/6327 Al 31.03.25",
+    "id": "cf0134a7517cd59f"
+  },
+  {
+    "date": "19/4/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "3370cddb421c0c3b"
+  },
+  {
+    "date": "22/4/2025",
+    "amount": -63.51,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "54e3a0ce06cd96a0"
+  },
+  {
+    "date": "17/4/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "071951ddd58f38a0"
+  },
+  {
+    "date": "17/4/2025",
+    "amount": -500.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Thomas Munns",
+    "id": "46916b1214896871"
+  },
+  {
+    "date": "16/4/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Protezione Identi",
+    "id": "441e51f7257f0b80"
+  },
+  {
+    "date": "16/4/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "7fd114cddff71c06"
+  },
+  {
+    "date": "15/4/2025",
+    "amount": -80.13,
+    "description": "Pagamento Mav",
+    "type": "Pag. Mav 05696261079775263",
+    "id": "176da15ae51e83da"
+  },
+  {
+    "date": "15/4/2025",
+    "amount": -235.0,
+    "description": "Pagamento Mav",
+    "type": "Pag. Mav 05696261079642235",
+    "id": "6c4838bf11b69205"
+  },
+  {
+    "date": "15/4/2025",
+    "amount": -45.02,
+    "description": "Pagamento Mav",
+    "type": "Pag. Mav 05696261079754441",
+    "id": "1a2372c0ef993ffb"
+  },
+  {
+    "date": "15/4/2025",
+    "amount": -222.0,
+    "description": "Pagamento Mav",
+    "type": "Pag. Mav 05696261079605742",
+    "id": "37aee895935c9928"
+  },
+  {
+    "date": "12/4/2025",
+    "amount": -35.0,
+    "description": "Centro Servizi Pratica",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "eb4ddaeb28cbc910"
+  },
+  {
+    "date": "10/4/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "70eb94a85d29b68f"
+  },
+  {
+    "date": "10/4/2025",
+    "amount": -130.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "775c8abcdd2f1ecd"
+  },
+  {
+    "date": "10/4/2025",
+    "amount": -350.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "9d45a203b63f5e65"
+  },
+  {
+    "date": "7/4/2025",
+    "amount": -478.14,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "baf3192ecd172239"
+  },
+  {
+    "date": "1/4/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "f02b17ce18cec335"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "6fdd8e08b8ec1622"
+  },
+  {
+    "date": "1/4/2025",
+    "amount": 3003.39,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "6eb2773c50067a90"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -1.24,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Addebito Sepa Dd A Fav. Di Telepass Spa Di Cui 0,00 Per Commiss/spese 599",
+    "id": "fed3271335d948c0"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -31.45,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Caf Fido 001 Credito In C/c Ordinario Italia Ordin",
+    "id": "9f07223cfe1b9140"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -1050.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "2036a02fe48b9c2f"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -180.73,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "93d84ada5107efd2"
+  },
+  {
+    "date": "31/3/2025",
+    "amount": -117.86,
+    "description": "Eni Regolament",
+    "type": "Addebito Utenze",
+    "id": "3e9bddb4f9d507c0"
+  },
+  {
+    "date": "25/3/2025",
+    "amount": -10.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "54c030c10f75f23a"
+  },
+  {
+    "date": "28/3/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Carte No Problem Plus",
+    "id": "6bc9dc532092efbf"
+  },
+  {
+    "date": "24/3/2025",
+    "amount": -13.8,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "2e16d3d3b7a725d0"
+  },
+  {
+    "date": "23/3/2025",
+    "amount": -38.0,
+    "description": "La Nuova Compagnia Ris",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "4c9a4ab8a4fd5c0c"
+  },
+  {
+    "date": "24/3/2025",
+    "amount": 74.32,
+    "description": "Bonifico Estero In Entrata",
+    "type": "Da: Google Ireland Limited",
+    "id": "9ce7d6ab41710735"
+  },
+  {
+    "date": "19/3/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "969d391739a7a140"
+  },
+  {
+    "date": "15/3/2025",
+    "amount": -24.9,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "1779d75b38033f1e"
+  },
+  {
+    "date": "13/3/2025",
+    "amount": -10.7,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "f31d10d55696a631"
+  },
+  {
+    "date": "15/3/2025",
+    "amount": -550.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Atm Mf 1",
+    "id": "c91a0fad7ee127b1"
+  },
+  {
+    "date": "12/3/2025",
+    "amount": -21.0,
+    "description": "Farmacia Abbate",
+    "type": "Pagamento Con Carta Di Debito",
+    "id": "05f8651f3e2b1136"
+  },
+  {
+    "date": "14/3/2025",
+    "amount": -3.9,
+    "description": "Polizze Assicurative",
+    "type": "Bnl Protezione Identi",
+    "id": "b1a5dc5af51aea8b"
+  },
+  {
+    "date": "13/3/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Roma Ag. 27 Asia Mf2",
+    "id": "e0391006f4ef4214"
+  },
+  {
+    "date": "13/3/2025",
+    "amount": 620.0,
+    "description": "Bonifico Ordinario In Entrata",
+    "type": "Da: Associazione Di Promozione Sociale",
+    "id": "38869d9ebb4c45d8"
+  },
+  {
+    "date": "11/3/2025",
+    "amount": -150.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "7f8d5f1343b32f90"
+  },
+  {
+    "date": "11/3/2025",
+    "amount": -76.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "ad8b92228bae645e"
+  },
+  {
+    "date": "10/3/2025",
+    "amount": -131.0,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: G.r.olimpia Srl",
+    "id": "b94f1abf8a4426f7"
+  },
+  {
+    "date": "10/3/2025",
+    "amount": -295.35,
+    "description": "Addebito Carta Di Credito",
+    "type": "Estratto Conto Carta Di Credito",
+    "id": "15579c23635c4b49"
+  },
+  {
+    "date": "10/3/2025",
+    "amount": -43.8,
+    "description": "Addebito Diretto",
+    "type": "Teamsystem Payments S.r.",
+    "id": "3a14a67a6b276f64"
+  },
+  {
+    "date": "6/3/2025",
+    "amount": -1.0,
+    "description": "Addebito Spese Per Servizi",
+    "type": "Spese Per Bonifico Istantaneo",
+    "id": "5bf333fb5c3903da"
+  },
+  {
+    "date": "6/3/2025",
+    "amount": -620.0,
+    "description": "Bonifico Istantaneo In Uscita",
+    "type": "A: Associazione Sotto Il Cielo Di Roma",
+    "id": "668693b37ba2c143"
+  },
+  {
+    "date": "5/3/2025",
+    "amount": -100.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "dd63d87d1b259a05"
+  },
+  {
+    "date": "3/3/2025",
+    "amount": -12.81,
+    "description": "Addebito Di Conto Corrente",
+    "type": "Pagamento Interessi Debitori",
+    "id": "7cc05927006cba51"
+  },
+  {
+    "date": "4/3/2025",
+    "amount": 1600.0,
+    "description": "Stipendi E Pensioni",
+    "type": "Da: Vicariato Di Roma",
+    "id": "4714fa749f26f6b3"
+  },
+  {
+    "date": "3/3/2025",
+    "amount": -247.25,
+    "description": "Bonifico Ordinario In Uscita",
+    "type": "A: Az Assicurazioni",
+    "id": "f168c59605d75141"
+  },
+  {
+    "date": "2/3/2025",
+    "amount": -50.0,
+    "description": "Prelievo Atm",
+    "type": "Bnl Ag. Roma 27 Asia",
+    "id": "5b53b2ddb0b86a56"
+  },
+  {
+    "date": "28/2/2025",
+    "amount": -3.73,
+    "description": "Uscite Adebiti Vari E Storni",
+    "type": "Canone Conto Bnl",
+    "id": "a8b79e7aa2957878"
+  },
+  {
+    "date": "3/3/2025",
+    "amount": 3003.39,
+    "description": "Stipendi E Pensioni",
+    "type": "Inps",
+    "id": "56555e38e56d708d"
+  }
+]
