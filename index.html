@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BNL Categorizer</title>
+  <meta name="description" content="App locale per categorizzare manualmente movimenti BNL e altri estratti CSV/XLSX.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>BNL Categorizer</h1>
+        <p>Categorizzazione manuale con salvataggio locale.</p>
+      </div>
+
+      <section class="panel">
+        <h2>Dati</h2>
+        <div class="stack">
+          <label class="file-label">
+            <input id="fileInput" type="file" accept=".csv,.xlsx,.xls">
+            <span>Importa CSV / XLSX</span>
+          </label>
+          <button id="reloadSeedBtn" class="ghost">Ricarica il file BNL allegato</button>
+          <button id="resetAssignmentsBtn" class="ghost danger">Azzera categorie salvate</button>
+        </div>
+        <p class="small muted">Nota: il formato <strong>.numbers</strong> non è gestibile in modo affidabile dentro una web app statica. Ho quindi precaricato i movimenti del file che hai allegato. Per futuri import, esporta da Numbers in CSV o XLSX.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Categorie</h2>
+        <div class="row gap">
+          <input id="newCategoryInput" type="text" placeholder="Nuova categoria">
+          <button id="addCategoryBtn">Aggiungi</button>
+        </div>
+        <div id="categoriesList" class="categories-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Riepilogo</h2>
+        <div id="summaryBox" class="summary-box"></div>
+      </section>
+    </aside>
+
+    <main class="main">
+      <header class="toolbar panel">
+        <div class="toolbar-grid">
+          <input id="searchInput" type="search" placeholder="Cerca descrizione o dettaglio">
+          <select id="categoryFilter">
+            <option value="">Tutte le categorie</option>
+            <option value="__uncategorized__">Solo senza categoria</option>
+          </select>
+          <select id="typeFilter">
+            <option value="">Entrate e uscite</option>
+            <option value="expense">Solo uscite</option>
+            <option value="income">Solo entrate</option>
+          </select>
+          <button id="exportBtn">Esporta CSV categorizzato</button>
+        </div>
+      </header>
+
+      <section class="panel table-panel">
+        <div class="table-head">
+          <div>
+            <h2>Movimenti</h2>
+            <p id="tableMeta" class="small muted"></p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Descrizione</th>
+                <th>Dettaglio</th>
+                <th class="right">Importo</th>
+                <th>Categoria</th>
+              </tr>
+            </thead>
+            <tbody id="transactionsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
